@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       193cb70f-1cdd-41e3-b84a-65dd2bdf9b85
+:END:
+#+title: braindump
+Braindump
+* Testing org roam and braindump .Please work.
