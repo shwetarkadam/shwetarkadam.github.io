@@ -1,4 +1,4 @@
-baseURL = "https://shwetarkadam.github.io/"
+baseURL = "https://shwetarkadam.github.io"
 languageCode = "en-us"
 title = "Shweta's Braindump"
 theme = "cortex-dark"
