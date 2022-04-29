@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shweta&#39;s Braindump</title>
-    <link>https://shwetarkadam.github.io/</link>
-    <description>Recent content on Shweta&#39;s Braindump</description>
+    <title>Shweta&#39;s Braindump Z</title>
+    <link>shwetarkadam.github.io/</link>
+    <description>Recent content on Shweta&#39;s Braindump Z</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://shwetarkadam.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="shwetarkadam.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>braindump</title>
-      <link>https://shwetarkadam.github.io/notes/20220426004505-braindump/</link>
+      <link>shwetarkadam.github.io/notes/20220426004505-braindump/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shwetarkadam.github.io/notes/20220426004505-braindump/</guid>
+      <guid>shwetarkadam.github.io/notes/20220426004505-braindump/</guid>
       <description>Braindump
 Testing org roam and braindump .Please work. </description>
     </item>
     
     <item>
       <title>Shweta&#39;s Braindump</title>
-      <link>https://shwetarkadam.github.io/about/</link>
+      <link>shwetarkadam.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shwetarkadam.github.io/about/</guid>
+      <guid>shwetarkadam.github.io/about/</guid>
       <description>Hi! I&amp;rsquo;m Shweta   , and you&amp;rsquo;ve stumbled upon my braindump. This website contains my working notes accumulated over some years. I haven&amp;rsquo;t exported all notes yet. So stay tuned
 You can start hopping around by going to the full index  . Have fun!</description>
     </item>
     
     <item>
       <title>Testsetup Learn org-roam</title>
-      <link>https://shwetarkadam.github.io/notes/testsetup/</link>
+      <link>shwetarkadam.github.io/notes/testsetup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://shwetarkadam.github.io/notes/testsetup/</guid>
+      <guid>shwetarkadam.github.io/notes/testsetup/</guid>
       <description>#+filetags: :braindump Blog posts on org-roam:
  https://notes.alexkehayias.com/org-roam/ https://vincent.demeester.fr/articles/org_roam.html https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1  Videos on zettelkasten:
 https://www.google.com/search?q=zettelkasten+youtube&amp;amp;sxsrf=ALeKk03k_168n-0OQ_xRpyQMGCzdW7u1-Q:1609530353742&amp;amp;source=lnms&amp;amp;tbm=vid&amp;amp;sa=X&amp;amp;ved=2ahUKEwjMsPXnv_vtAhXSmIsKHUdKDWcQ_AUoAXoECAYQAw&amp;amp;biw=1440&amp;amp;bih=795
