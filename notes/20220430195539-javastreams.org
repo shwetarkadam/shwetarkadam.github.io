@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       796c8658-06da-4586-b508-10a7e80e88d3
+:END:
+#+title: javastreams
+
+* Java Streams
+
+** Methods Include:
+
+*** filter: Used to filter out values
+
+*** map: Used to perform an operation on each element.Used Internal iterator
+
+***
