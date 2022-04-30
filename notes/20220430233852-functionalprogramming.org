@@ -4,7 +4,56 @@
 #+title: FunctionalProgramming
 
 We have :
-Inhererent Complexiity: Complexiitystemming from domain
+1. Inhererent Complexiity: Complexiitystemming from domain
 2. Accidental complexity: Complexity we create while trying to deal with inehrent complexity.
 
-> Functional Programming removes Accidental Complexity
+> Functional Programming removes Accidental Complexity.
+
+Functional Programming properties:
+**** Assignment less Programming:
+Much like how we dont use goto while coding but its okay for compiler to use go under the hood.
+
+goto is to strucutred programming
+assignment is to funtional programming (We try to avoid assignments)
+
+**** Immutable state:
+We can make smart copies of objects instead of true copy or fully copy like trie data strcuture.
+
+**** Functions as First class citizens.
+We treat functions as we do to objects.
+A higher order function can :
+ 1. We can pass function to function.
+ 2. We can create function within a function.
+ 3. We can return function from function.
+
+
+**** Pure Functions
+** Pure Functions dont have side effects
+
+Pure function:
+1. Does not change anything
+2. Does not depend on anything that changes.
+   a. The function result value cannot depend on any hidden information or state that may change while program execution proceeds or between different executions of the program * We want lazy evaluation.
+
+   b. If our function depends on something which changes outside the function it cannot be lazy.
+
+**** Functional Style vs Purely Functional Programming
+
+Purely functional programming will not allow any mutability.(Haskell)
+Functional style Programming provides hgiher order functions (Java,C#)
+
+**** Lambda Expression:
+Now lets consider method or Lambda Expression(anonymous Function)
+Only parameters list, body.
+
+Inferred return type based on context, no name needed.
+
+Passed to higher-order functions.
+
+
+ Familiar vs Simple
+Complex (not simple) things seem easy to think about when they become familiar. Familiarity with something does not imply that thing is simple.
+
+[[id:301aac9f-388d-4772-a538-b8c6c6a0545d][Iterators]]
+[[id:f9c5aa4b-b230-4fe5-a825-fbe486f0d4d8][LazyEvaluationAndImmutability
+]]

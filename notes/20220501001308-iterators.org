@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       301aac9f-388d-4772-a538-b8c6c6a0545d
+:END:
+#+title: Iterators
+
+External to Internal Iterators.
+Given
+#+begin_src
+List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10)
+#+end_src
+
+External Iterators
+#+begin_src
+for (int i = 0; i < numbers.size();  i++){
+         System.out.println(numbers.get(i));
+}
+#+end_src
+
+
+Internal Iterators
+#+begin_src
+  numbers.forEach((Integer E) -> System.out.println(e));
+#+end_src
+
+or even type inference in Java
+#+begin_src
+numbers.forEach((e) -> System.out.println(e));
+#+end_src
+
+or method reference
+#+begin_src
+numbers.forEach(System.out::println);
+#+end_src

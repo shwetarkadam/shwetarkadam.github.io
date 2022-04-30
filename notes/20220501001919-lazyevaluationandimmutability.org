@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       f9c5aa4b-b230-4fe5-a825-fbe486f0d4d8
+:END:
+#+title: LazyEvaluationAndImmutability
+Given
+#+begin_src
+List<Integer> numbers = Arrays.asList(1,2,3);
+#+end_src
+We have a lambda that relies on the external array factor
+#+begin_src
+int[] factor = new int[] { 2 };
+Steam<Integer> strm = numbers.stream().map(e -> e * factor[0]);
+
+factor[0] = 0
+strm.forEach(System.out::println)
+#+end_src
+
+This makes the lambda not pure; it relies on external elements that can change.
+
+While we initially expected the printed output to be 2, 4, 6 we’ll be getting 0,0,0 This is because the lazy evaluation happens after the change.
