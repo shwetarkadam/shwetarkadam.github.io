@@ -55,5 +55,6 @@ Passed to higher-order functions.
 Complex (not simple) things seem easy to think about when they become familiar. Familiarity with something does not imply that thing is simple.
 
 [[id:301aac9f-388d-4772-a538-b8c6c6a0545d][Iterators]]
+
 [[id:f9c5aa4b-b230-4fe5-a825-fbe486f0d4d8][LazyEvaluationAndImmutability
 ]]
