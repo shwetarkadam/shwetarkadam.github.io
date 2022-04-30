@@ -1,14 +1,44 @@
 :PROPERTIES:
 :ID:       796c8658-06da-4586-b508-10a7e80e88d3
 :END:
-#+title: javastreams
+#+title: Javastreams
 
-* Java Streams
+In Functional programming, we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.
 
-** Methods Include:
+**** Java Stream Operations
+Methods include :
 
-*** filter: Used to filter out values
+****** map:
+Used to apply or perform an operation on each element in the stream.
+#+begin_src
+List number = Arrays.asList(2,3,4,5);
+List square = number.stream().map(x->x*x).collect(Collectors.toList());
+#+end_src
 
-*** map: Used to perform an operation on each element.Used Internal iterator
+****** filter:
+Used to select or filter certain elements in the stream.
+#+begin_src
+  List<Customer> customersWithMoreThan100Points = customers
+  .stream()
+  .filter(c -> c.getPoints() > 100)
+  .collect(Collectors.toList());
+#+end_src
 
-***
+****** reduce:
+Used to reduce the elemets of the stream to a single value
+Syntax: Identity (in below eg:0) and Accumulator(the expression)
+#+begin_src
+List l=Arrays.asList(1,2,3,4);
+l.stream().reduce(0,(subtotal,element)->subtotal+element);
+
+#+end_src
+We can also use method reference
+
+****** forEach:
+Used to iterate throu each and every element of stream.
+forEach() is a terminal operation means after the operation is performed the stream can no longer be used.
+#+begin_src
+List l=Arrays.asList(1,2,3,4,5);
+l.stream().map(i->i*i).forEach(y->System.out.println(y));
+
+#+end_src
