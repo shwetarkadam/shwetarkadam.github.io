@@ -3,7 +3,7 @@
 :END:
 #+title: Javastreams
 
-In Functional programming, we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.
+In [[id:0e678a65-11e0-4e1c-94bb-af3d67c7b444][FunctionalProgramming]], we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.
 
 **** Java Stream Operations
 Methods include :

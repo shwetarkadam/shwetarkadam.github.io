@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0e678a65-11e0-4e1c-94bb-af3d67c7b444
+:END:
+#+title: FunctionalProgramming
+
+We have :
+Inhererent Complexiity: Complexiitystemming from domain
+2. Accidental complexity: Complexity we create while trying to deal with inehrent complexity.
+
+> Functional Programming removes Accidental Complexity
