@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       ddbf37ae-55fb-45d9-a6de-98dda05b4199
+:END:
+#+title: VariableSizeSlidingWindowFormat
+
+
+***** General Format of Variable Size Sliding Window by Aditya Verma
+
+
+#+begin_src
+
+while(j<size)
+{
+some calculations involving j
+
+ if(condition <k)
+   j++;
+
+  else if(cond. ==k)
+  {
+  ans=calcul;ations
+   j++;
+  }
+  else if( condition >k ){
+      while(condition >k){
+        remove calculation for i
+        i++;
+    }
+      j++
+
+   }
+
+}
+#+end_src

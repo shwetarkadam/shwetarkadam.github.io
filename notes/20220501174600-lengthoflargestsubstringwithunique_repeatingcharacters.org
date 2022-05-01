@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       d78a781c-bbf9-4d2e-94a1-ea674edb1912
+:END:
+#+title: LengthofLargestSubstringwithUnique RepeatingCharacters
+
+
+Refer :Variable Size [[id:3fa94a01-b674-4c91-bb28-39a13f4554e3][SlidingWindow]] for identification
+
+Window size is asked with largest substring with
+condition :no. of unique characters in a sliding windowi
+
+
+We need to maintin count of no of uniqwue character hence we will use map datastrcuture.
+Window Size cond:j-i+1
+
+Relate to Problem [[id:41ef977e-7a22-4378-8a46-e044fb2b521d][LargestSubstringwithkUniqueCharacters]]
+
+**** we dont have the value of k.
+Now with whom should we compare map.size() with??
+Since it says All unique chracters instead of K it means that in a window of size 5 all the characters in that window should in that particular window should be unique .Hence we need to compare map.size() with Window size which is j-i+1
+
+
+ [[id:ddbf37ae-55fb-45d9-a6de-98dda05b4199][VariableSizeSlidingWindowFormat]]
+
+ [[https://github.com/shwetarkadam/Leetcode_Practice_Java/blob/main/SlidingWindow/LongestubstringWithoutRepeatingCharactersMed.java][Solution]]
