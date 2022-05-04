@@ -1,9 +1,9 @@
 :PROPERTIES:
 :ID:       505BA7FB-050D-4F6F-BF72-D3BFF0AFC8CE
 :END:
-#+TITLE: #+title: Git
+#+TITLE: Git
 
-** Update local feature from master branch
+*** Update local feature from master branch
 
 #+begin_src
 git checkout the_branch_you_want_to_update
@@ -13,10 +13,10 @@ git merge origin/master
 git push origin  the_branch_you_want_to_update  //to update the remote feature branch
 #+end_src
 
-** To see the list of commits that are causing conflict
+*** To see the list of commits that are causing conflict
 #+begin_src
 git log --merge
 #+end_src
 
-** Maintain multiple users in git without ssh for specfic repos
+*** Maintain multiple users in git without ssh for specfic repos
 [[https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig][Refer]]
