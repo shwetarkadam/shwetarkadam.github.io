@@ -21,18 +21,17 @@ Window Size | Condition
 ***** Variable size window:
 Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum.
 
-[[id:8626e3f6-3a05-46ab-9969-f6f41db2c2e8][VariableSizeSlidingWindowFormat]]
 
-|---------------------------------------+-------------------------------------------|
-| Fixed Size Window                     | Variable Size Window                      |
-|---------------------------------------+-------------------------------------------|
-| 1. Max/Min Subarray of size k         | 1. Largest/smallest subarray equal to k   |
-|                                       |                                           |
-| 2. First -ve in every min size of k   | 2.  [[id:aa54c318-a40b-4e24-87d3-357fa66d803f][LargestSubstringWithKUniqueCharacters]] |
-|                                       |                                           |
-| 3. Count occurence of anagram         | 3.                                        |
-|                                       |                                           |
-| 4. Maximum  of all subarray of size k | 4. Pick Toy                               |
-|                                       |                                           |
-| 5. Max of min of every window size    | 5.Minimum window substring.               |
-|---------------------------------------+-------------------------------------------|
+|---------------------------------------+-----------------------------------------|
+| Fixed Size Window                     | Variable Size Window                    |
+|---------------------------------------+-----------------------------------------|
+| 1. Max/Min Subarray of size k         | 1. Largest/smallest subarray equal to k |
+|                                       |                                         |
+| 2. First -ve in every min size of k   | 2.                                      |
+|                                       |                                         |
+| 3. Count occurence of anagram         | 3.                                      |
+|                                       |                                         |
+| 4. Maximum  of all subarray of size k | 4. Pick Toy                             |
+|                                       |                                         |
+| 5. Max of min of every window size    | 5.Minimum window substring.             |
+|---------------------------------------+-----------------------------------------|
