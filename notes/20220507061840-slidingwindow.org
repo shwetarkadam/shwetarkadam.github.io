@@ -4,20 +4,35 @@
 #+title: SlidingWindow
 
 Aditya Verma Approach to sliding window :
-***** Identificatiion :
+****** Identificatiion :
 1. Could be array or string.
 2. There is a window which is *continous* (doesnt break) .
 3. Question might ask related to *subarray or substring* .Also it can ask largest or smallest value in the question.
 4. Window size will be given or the question might ask to find out window size.
+#+begin_src
+Window Size | Condition
+#+end_src
 
-
-   Window size | Condition
-
-
-2 Types of Sliding window problems:
- a. Fixed size window: If window size is given then based on some condition we return min or max value.
- b. Variable size window: We are given some condition and we have to find the window size based on that condition.
+************ 2 Types of Sliding window problems:
+ 1. Fixed size window: If window size is given then based on some condition we return min or max value.
+ 2. Variable size window: We are given some condition and we have to find the window size based on that condition.
 
 
 ***** Variable size window:
-Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum
+Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum.
+
+[[id:8626e3f6-3a05-46ab-9969-f6f41db2c2e8][VariableSizeSlidingWindowFormat]]
+
+|---------------------------------------+-------------------------------------------|
+| Fixed Size Window                     | Variable Size Window                      |
+|---------------------------------------+-------------------------------------------|
+| 1. Max/Min Subarray of size k         | 1. Largest/smallest subarray equal to k   |
+|                                       |                                           |
+| 2. First -ve in every min size of k   | 2.  [[id:aa54c318-a40b-4e24-87d3-357fa66d803f][LargestSubstringWithKUniqueCharacters]] |
+|                                       |                                           |
+| 3. Count occurence of anagram         | 3.                                        |
+|                                       |                                           |
+| 4. Maximum  of all subarray of size k | 4. Pick Toy                               |
+|                                       |                                           |
+| 5. Max of min of every window size    | 5.Minimum window substring.               |
+|---------------------------------------+-------------------------------------------|

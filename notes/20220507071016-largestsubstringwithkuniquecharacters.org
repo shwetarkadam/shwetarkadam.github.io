@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       aa54c318-a40b-4e24-87d3-357fa66d803f
+:END:
+#+title: LargestSubstringWithKUniqueCharacters
+
+
+
+We need to maintin count of no of uniqwue character hence we will use map datastrcuture.
+Window Size cond:j-i+1
+
+[[id:518478cb-76da-4aba-9fd1-009455fdc5cb][SlidingWindow]]
+[[id:8626e3f6-3a05-46ab-9969-f6f41db2c2e8][
+VariableSizeSlidingWindowFormat]]
