@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       9e8ea8dc-cf91-4c7f-8aff-1c1c2f600c91
+:END:
+#+title: JavaStreams
+
+In [[id:ddef7764-a374-41ef-bcbe-1d65770be961][FunctionalProgramming]] , we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.
+
+**** Java Stream Operations
+Methods include :
