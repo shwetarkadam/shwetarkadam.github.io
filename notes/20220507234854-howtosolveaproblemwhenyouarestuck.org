@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       9cc727cd-362c-4363-9f75-d2b4bfc6f33e
+:END:
+#+title: HowToSolveAProblemWhenYouAreStuck
+
+Short thoughts on how to design or decide on actions when you are stuck or going round and round in circles when you face an issue.
+
+#+begin_src
+Constantly ASK YOURSELF what you are trying to do
+#+end_src
+
+- While working when the goal or roadmap is not clear
+  OR
+- When Im doing something from scratch
+  OR
+- When there is a lot of uncertainity and many options to do
+
+  Process:
+
+************************  Ask yourself what is the problem I am trying to solve.
+- Be sure thart you understand it deeply and picture what you trying to accomplish.
+
+- Decide the action
+
+- Remind yourself: What I am trying to do?
+- Ask the question: **Does doing this solve my problem?**
+
+  Doing this should transform your problem into your imaginary solved problem (that’s why it’s important to have an idea of how does the solved problem looks like)
+
+- Do I need to do this?
+  All actions shd be done to solve the problem. Any action which is not needed should be disacrded.
