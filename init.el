@@ -54,7 +54,7 @@
 
   (setq org-hugo-section "notes")
 
- (dolist (let (org-id-extra-files (find-lisp-find-files notes-org-roam "\.org$")
+ (setq org-id-extra-files (find-lisp-find-files notes-org-roam "\.org$"))
                                   
   (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
