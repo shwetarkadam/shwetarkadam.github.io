@@ -54,12 +54,12 @@
 
   (setq org-hugo-section "notes")
 
-   (dolist(org-file (directory-files-recursively notes-org-files "\.org$")
-  (dolist (let (org-id-extra-files (find-lisp-find-files notes-org-roam "\.org$")
-    (with-current-buffer (find-fileorg-id-extra-files)
-      (message (format "[build] Exporting %s" org-id-extra-files))
+;;  (setq org-id-extra-files (find-lisp-find-files notes-org-files "\.org$"))
+                                  
+  (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
+    (with-current-buffer (find-file org-file)
+      (message (format "[build] Exporting %s" org-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
-
   (message "Done!"))
 
 (provide 'build/export-all)
