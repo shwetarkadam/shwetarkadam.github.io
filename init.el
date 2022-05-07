@@ -51,6 +51,9 @@
 
   (setq org-hugo-section "notes")
 (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
+  (let ((org-id-extra-files (find-lisp-find-files notes-org-files "\.org$")))
+(org-hugo-export-wim-to-md))
+  
   
   (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (setq org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
