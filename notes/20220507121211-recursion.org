@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ae73eed9-0bec-41c6-a7a4-76b83822255f
+:END:
+#+title: Recursion
+
+Approaches to Recursion acc to Aditya Varma
+*********** 1. Recursive Tree - Input Output Method
+*********** 2. Hypothesis Induction Base method (Better for tree ,linked lists)
+*********** 3. Choice Diagram (DP)
