@@ -47,6 +47,16 @@
 
 (defun build/export-all ()
   "Export all org-files (including nested) under knowledge-base-org-files."
+	
+  (setq org-hugo-base-dir
+    (let* ((env-key "HUGO_BASE_DIR")
+           (env-value (getenv env-key)))
+      (if (and env-value (file-directory-p env-value))
+          env-value
+        (error (format "%s is not set or is not an existing directory (%s)" env-key env-value)))))
+
+  (setq org-hugo-section "notes")
+
   (let ((search-path (concat (file-name-as-directory notes-org-files) "\.org$")))
     (message (format "[build] Looking for files at %s" search-path))
     (dolist (org-file (directory-files-recursively search-path "\.org$"))
