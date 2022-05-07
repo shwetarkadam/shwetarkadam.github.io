@@ -38,6 +38,9 @@
 (use-package ox-hugo
   :straight (:type git :host github :repo "kaushalmodi/ox-hugo"))
 
+
+  (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
+  (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
 ;;; Public functions
 (defun build/export-all ()
   "Export all org-files (including nested) under notes-org-files."
@@ -52,15 +55,17 @@
   (setq org-hugo-section "notes")
 
   
-  (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
-  (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
+
 ;;   (let ((org-id-extra-files  notes-org-files "\.org$"))
 ;; (org-hugo-export-wim-to-md))
-    (dolist (org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
-    (with-current-buffer (find-file org-id-extra-file)
-      (message (format "[build] Exporting %s" org-id-extra-file))
+;;     (dolist (org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
+;;     (with-current-buffer (find-file org-id-extra-file)
+;;       (message (format "[build] Exporting %s" org-id-extra-file))
 ;;       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
-
+  (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
+  (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
+  
+  
     (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
       (message (format "[build] Exporting %s" org-file))
