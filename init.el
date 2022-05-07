@@ -38,35 +38,10 @@
 (use-package ox-hugo
   :straight (:type git :host github :repo "kaushalmodi/ox-hugo"))
 
-
-  (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
-  (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
-;;;
-;;; Public functions
-;;;
-
-;; (defun build/export-all ()
-;;   "Export all org-files (including nested) under knowledge-base-org-files."
-	
-;;   (setq org-hugo-base-dir
-;;     (let* ((env-key "HUGO_BASE_DIR")
-;;            (env-value (getenv env-key)))
-;;       (if (and env-value (file-directory-p env-value))
-;;           env-value
-;;         (error (format "%s is not set or is not an existing directory (%s)" env-key env-value)))))
-
-;;   (setq org-hugo-section "notes")
-
-;;   (let ((search-path (concat(file-name-as-directory notes-org-files) "\.org$")))
-;;     (message (format "[build] Looking for files at %s" search-path))
-;;     (dolist (org-file (directory-files-recursively search-path "\.org$"))
-;;       (with-current-buffer (find-file org-file)
-;; 			   (message (format "[build] Exporting %s" org-file))
-;; 			   (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
-;;     (message "Done!")))
 ;;; Public functions
 (defun build/export-all ()
   "Export all org-files (including nested) under notes-org-files."
+(setq org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
 
   (setq org-hugo-base-dir
     (let* ((env-key "HUGO_BASE_DIR")
@@ -77,24 +52,10 @@
 
   (setq org-hugo-section "notes")
 
-  
-
-;;   (let ((org-id-extra-files  notes-org-files "\.org$"))
-;; (org-hugo-export-wim-to-md))
-;;     (dolist (org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
-;;     (with-current-buffer (find-file org-id-extra-file)
-;;       (message (format "[build] Exporting %s" org-id-extra-file))
-;;       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
-  (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
-  (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
-  
- 
-    (dolist (org-file (directory-files-recursively org-hugo-base-dir "\.org$"))
+  (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
       (message (format "[build] Exporting %s" org-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
-
-  
 
   (message "Done!"))
 
