@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       518478cb-76da-4aba-9fd1-009455fdc5cb
+:END:
+#+title: SlidingWindow
+
+Aditya Verma Approach to sliding window :
+***** Identificatiion :
+1. Could be array or string.
+2. There is a window which is *continous* (doesnt break) .
+3. Question might ask related to *subarray or substring* .Also it can ask largest or smallest value in the question.
+4. Window size will be given or the question might ask to find out window size.
+
+
+   Window size | Condition
+
+
+2 Types of Sliding window problems:
+ a. Fixed size window: If window size is given then based on some condition we return min or max value.
+ b. Variable size window: We are given some condition and we have to find the window size based on that condition.
+
+
+***** Variable size window:
+Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum
