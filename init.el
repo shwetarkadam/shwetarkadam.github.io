@@ -88,10 +88,9 @@
   (setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
   (setf org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
   
-    (let ((search-path (concat(file-name-as-directory notes-org-files) "\.org$")))
+ 
     (dolist (org-file (directory-files-recursively org-hugo-base-dir "\.org$"))
     (with-current-buffer (find-file org-file)
-      (message (format "[build] Looking for files at %s" search-path))
       (message (format "[build] Exporting %s" org-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
 
