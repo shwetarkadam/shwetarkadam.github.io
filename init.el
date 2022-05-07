@@ -64,8 +64,8 @@
 
   
   (dolist (org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
-    (with-current-buffer (find-file org-file)
-      (message (format "[build] Exporting %s" org-file))
+    (with-current-buffer (find-file org-id-extra-file)
+      (message (format "[build] Exporting %s" org-id-extra-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
 
   (message "Done!"))
