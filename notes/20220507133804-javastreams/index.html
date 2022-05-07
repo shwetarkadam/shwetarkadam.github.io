@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>Iterators – Shweta's Braindump</title>
+<head><title>JavaStreams – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -24,32 +23,16 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Iterators</h1>
+<h1 class=collapsed-title>JavaStreams</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507070445-iterators/ alt=Iterators class=permalink><h1>Iterators</h1></a>
-<p>External to Internal Iterators.
-Given</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10)
-</code></pre><p>External Iterators</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>for (int i = 0; i &lt; numbers.size();  i++){
-	 System.out.println(numbers.get(i));
-}
-</code></pre><p>Internal Iterators</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach((Integer E) -&gt; System.out.println(e));
-</code></pre><p>or even type inference in Java</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach((e) -&gt; System.out.println(e));
-</code></pre><p>or method reference</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach(System.out::println);
-</code></pre>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507070445-iterators.org>Edit this page on GitHub</a></small>
-</div>
-<div class=bl-section>
-<h4>Links to this note</h4>
-<div class=backlinks>
-<ul>
-<li><a href=/notes/20220507070353-functionalprogramming/>FunctionalProgramming</a></li>
-</ul>
-</div>
+<a href=https://notes.codeklutz.com/notes/20220507133804-javastreams/ alt=JavaStreams class=permalink><h1>JavaStreams</h1></a>
+<p>In <a href=/notes/20220507070353-functionalprogramming/ target=_blank>
+FunctionalProgramming
+</a>
+, we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.</p>
+<h2 id=java-stream-operations>Java Stream Operations</h2>
+<p>Methods include :</p>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507133804-javastreams.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
