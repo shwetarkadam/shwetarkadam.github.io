@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       9cc727cd-362c-4363-9f75-d2b4bfc6f33e
 :END:
-#+title: HowToSolveAProblemWhenYouAreStuck
+#+title: How To Solve A Problem When You Are Stuck
 
 Short thoughts on how to design or decide on actions when you are stuck or going round and round in circles when you face an issue.
 
