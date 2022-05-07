@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       63dfebdd-2587-43dc-8c27-4a401f44ca03
+:END:
+#+title: EngineeringCareerPlanning
+
+Framework for self evaluation and reflection of engineering carrier and achieving Impact for your role and team.
+
+DropBox Career Planning Link: [[https://dropbox.github.io/dbx-career-framework/ic1_software_engineer.html][Engineering Career Planning]]
