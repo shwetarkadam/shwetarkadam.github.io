@@ -50,7 +50,7 @@
         (error (format "%s is not set or is not an existing directory (%s)" env-key env-value)))))
 
   (setq org-hugo-section "notes")
-(setf org-id-extra-files (directory-files-recursively knowledge-base-dir "notes"))
+(setq org-id-extra-files (directory-files-recursively "notes" "org"))
 
   (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
