@@ -57,10 +57,10 @@
 ;;   (let ((org-id-extra-files  notes-org-files "\.org$"))
 ;; (org-hugo-export-wim-to-md))
   
-;;     (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
-;;     (with-current-buffer (find-file org-file)
-;;       (message (format "[build] Exporting %s" org-file))
-;;       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
+    (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
+    (with-current-buffer (find-file org-file)
+      (message (format "[build] Exporting %s" org-file))
+      (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
 
   
   (dolist (org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
