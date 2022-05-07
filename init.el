@@ -57,7 +57,7 @@
 
   (setq org-hugo-section "notes")
 
-  (let ((search-path (concat (file-name-as-directory notes-org-files) "\.org$")))
+  (let ((search-path ((file-name-as-directory notes-org-files) "\.org$")))
     (message (format "[build] Looking for files at %s" search-path))
     (dolist (org-file (directory-files-recursively search-path "\.org$"))
       (with-current-buffer (find-file org-file)
