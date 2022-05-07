@@ -50,10 +50,10 @@
         (error (format "%s is not set or is not an existing directory (%s)" env-key env-value)))))
 
   (setq org-hugo-section "notes")
-(setq org-id-extra-files (directory-files-recursively org-roam-directory "\.org$"))
+(setq org-id-extra-files (directory-files-recursively  notes-org-files "\.org$"))
   
   (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
-    (setq org-id-extra-files (directory-files-recursively org-roam-directory "\.org$"))
+    (setq org-id-extra-files (directory-files-recursively notes-org-files "\.org$"))
     (with-current-buffer (find-file org-file)
       (message (format "[build] Exporting %s" org-file))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
