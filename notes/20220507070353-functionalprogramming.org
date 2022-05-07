@@ -50,3 +50,5 @@ Passed to higher-order functions.
 
 *** Familiar vs Simple
 Complex (not simple) things seem easy to think about when they become familiar. Familiarity with something does not imply that thing is simple.
+
+[[id:e8bce2b8-cef1-4e83-ae0f-76d48ac61c17][Iterators]]
