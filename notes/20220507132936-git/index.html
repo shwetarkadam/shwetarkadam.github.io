@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Shweta's Braindump – Shweta's Braindump</title>
+<head><title>Git – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -23,28 +24,25 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Shweta's Braindump</h1>
+<h1 class=collapsed-title>Git</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/about/ alt="Shweta's Braindump" class=permalink><h1>Shweta's Braindump</h1></a>
-<h1 id=hi>Hi!</h1>
-<p>I&rsquo;m <a href=https://www.codeklutz.com/ target=_blank>
-Shweta<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+<a href=https://notes.codeklutz.com/notes/20220507132936-git/ alt=Git class=permalink><h1>Git</h1></a>
+<h2 id=update-local-feature-from-master-branch>Update local feature from master branch</h2>
+<pre tabindex=0><code class=language-nil data-lang=nil>git checkout the_branch_you_want_to_update
+
+git merge origin/master
+
+
+</code></pre><h2 id=for-same-changes-to-reflect-in-remote-branch>For same changes to reflect in remote branch</h2>
+<pre tabindex=0><code class=language-nil data-lang=nil>git push origin  the_branch_you_want_to_update  //to update the remote feature branch
+</code></pre><h2 id=to-see-the-list-of-commits-that-are-causing-conflict>To see the list of commits that are causing conflict</h2>
+<pre tabindex=0><code class=language-nil data-lang=nil>git log --merge
+</code></pre><h2 id=maintain-multiple-users-in-git-without-ssh-for-specfic-repos>Maintain multiple users in git without ssh for specfic repos</h2>
+<p><a href=https://stackoverflow.com/questions/4220416/can-i-specify-multiple-users-for-myself-in-gitconfig target=_blank>
+Refer<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
 </a>
-, and you&rsquo;ve stumbled upon my braindump.
-This website contains my working notes accumulated over some weeks. I shall add which I find insightful or useful. So stay tuned</p>
-<p>You can start hopping around by going to the <a href=/notes/>
-full index
-</a>
-.
-Have fun!</p>
-</div>
-<div class=bl-section>
-<h4>Links to this note</h4>
-<div class=backlinks>
-<ul>
-<li><a href=/notes/20220507070353-functionalprogramming/>FunctionalProgramming</a></li>
-</ul>
-</div>
+</p>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507132936-git.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
