@@ -7,6 +7,8 @@
 
 (require 'subr-x)
 
+(require 'find-lisp)
+
 (toggle-debug-on-error)      ;; Show debug informaton as soon as error occurs.
 (setq make-backup-files nil) ;; Disable "<file>~" backups.
 
@@ -52,9 +54,10 @@
 
   (setq org-hugo-section "notes")
 
-  (dolist (org-file (directory-files-recursively notes-org-files "\.org$"))
-    (with-current-buffer (find-file org-file)
-      (message (format "[build] Exporting %s" org-file))
+   (dolist(org-file (directory-files-recursively notes-org-files "\.org$"))
+  (dolist (let (org-id-extra-files (find-lisp-find-files notes-org-roam "\.org$"))
+    (with-current-buffer (find-fileorg-id-extra-files)
+      (message (format "[build] Exporting %s" org-id-extra-files))
       (org-hugo-export-wim-to-md :all-subtrees nil nil nil)))
 
   (message "Done!"))
