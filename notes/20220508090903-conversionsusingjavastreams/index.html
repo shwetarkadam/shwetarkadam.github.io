@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Java Streams – Shweta's Braindump</title>
+<head><title>Conversions Using Java Streams – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -23,16 +24,30 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Java Streams</h1>
+<h1 class=collapsed-title>Conversions Using Java Streams</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507133804-javastreams/ alt="Java Streams" class=permalink><h1>Java Streams</h1></a>
-<p>In <a href=/notes/20220507070353-functionalprogramming/ target=_blank>
-FunctionalProgramming
-</a>
-, we tell the code what to do and the livbrary does it for us.In imperative style we tell the code what to do and how to do it.</p>
-<h2 id=java-stream-operations>Java Stream Operations</h2>
-<p>Methods include :</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507133804-javastreams.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20220508090903-conversionsusingjavastreams/ alt="Conversions Using Java Streams" class=permalink><h1>Conversions Using Java Streams</h1></a>
+<ul>
+<li>
+<p>int []array -> Integer ArrayList</p>
+<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; l=Arrays.stream(nums).boxed().toList();
+</code></pre></li>
+</ul>
+<p>This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array&rsquo;s length cannot be change the lengthof this list cannot be changed too.
+Hence methods like remove() will give Unsupported Operation exception</p>
+<ul>
+<li>To solve this,just create a &ldquo;real&rdquo; new list</li>
+</ul>
+<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; l=new ArrayList(Arrays.stream(nums).boxed().toList());
+</code></pre><ul>
+<li>
+<p>Integer ArrayList -> int []array</p>
+<pre tabindex=0><code class=language-nil data-lang=nil>int[] example1 = list.stream().mapToInt(i-&gt;i).toArray();
+// OR
+int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
+</code></pre></li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220508090903-conversionsusingjavastreams.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
