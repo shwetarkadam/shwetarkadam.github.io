@@ -7,3 +7,5 @@ In [[id:ddef7764-a374-41ef-bcbe-1d65770be961][FunctionalProgramming]] , we tell 
 
 **** Java Stream Operations
 Methods include :
+
+[[id:89384a06-831e-46ea-96f6-311da9bb625e][Conversions Using Java Streams]]
