@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       63dfebdd-2587-43dc-8c27-4a401f44ca03
 :END:
-#+title: EngineeringCareerPlanning
+#+title: Engineering Career Planning
 
 Framework for self evaluation and reflection of engineering carrier and achieving Impact for your role and team.
 
