@@ -3,6 +3,8 @@
 :END:
 #+title: Conversions Using Java Streams
 
+Conversions of various data structures using Streams
+
 - int []array -> Integer ArrayList
   #+begin_src
    List<Integer> l=Arrays.stream(nums).boxed().toList();
