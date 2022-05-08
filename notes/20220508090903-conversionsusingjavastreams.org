@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       89384a06-831e-46ea-96f6-311da9bb625e
+:END:
+#+title: Conversions Using Java Streams
+
+- int []array -> Integer ArrayList
+  #+begin_src
+   List<Integer> l=Arrays.stream(nums).boxed().toList();
+  #+end_src
+This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array's length cannot be change the lengthof this list cannot be changed too.
+Hence methods like remove() will give Unsupported Operation exception
+
+  - To solve this,just create a "real" new list
+#+begin_src
+  List<Integer> l=new ArrayList(Arrays.stream(nums).boxed().toList());
+#+end_src
+
+- Integer ArrayList -> int []array
+  #+begin_src
+int[] example1 = list.stream().mapToInt(i->i).toArray();
+// OR
+int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
+  #+end_src

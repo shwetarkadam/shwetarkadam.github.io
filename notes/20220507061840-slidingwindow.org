@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       518478cb-76da-4aba-9fd1-009455fdc5cb
 :END:
-#+title: SlidingWindow
+#+title: Sliding Window
 
 Aditya Verma Approach to sliding window :
 ****** Identificatiion :
