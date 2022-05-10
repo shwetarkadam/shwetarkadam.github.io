@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       0A7196E7-37F5-42A1-A271-D494224EEABA
 :END:
-#+TITLE: #+title: Header Enrichment
+#+TITLE:Header Enrichment
 
 
 HTTP Header Enrichment is a **mobile-network** capability to authenticate/identify a msisdn,who is browsing thru the internet using mobile network.
