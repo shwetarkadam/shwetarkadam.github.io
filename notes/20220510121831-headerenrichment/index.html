@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>EngineeringRoadmap – Shweta's Braindump</title>
+<head><title>#+title: Header Enrichment – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -23,15 +23,34 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>EngineeringRoadmap</h1>
+<h1 class=collapsed-title>#+title: Header Enrichment</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220508095606-engineeringroadmap/ alt=EngineeringRoadmap class=permalink><h1>EngineeringRoadmap</h1></a>
-<p>Roadmap to refer :
-<a href=https://roadmap.sh/backend target=_blank>
-https://roadmap.sh/backend<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220508095606-engineeringroadmap.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20220510121831-headerenrichment/ alt="#+title: Header Enrichment" class=permalink><h1>#+title: Header Enrichment</h1></a>
+<p>HTTP Header Enrichment is a <strong><strong>mobile-network</strong></strong> capability to authenticate/identify a msisdn,who is browsing thru the internet using mobile network.</p>
+<ul>
+<li>
+<p>It can be used to identify a mobile subscriber based on HTTP request.The process consists of adding data fields in the HTTP header.</p>
+</li>
+<li>
+<p>Event based:This type of HTTP request is ususally triggered in the background by some of app running on the device in response to an event</p>
+</li>
+<li>
+<p>for example :User clicking on some button,where the mobile sends various information which the mobile network can use ti identify/authenticate wther msisdn user belongs to thier mobile network or no.So in this way molbile operator knows which user connects to thier network.</p>
+</li>
+<li>
+<p>The mobile operator whitelists certain urls in which a user hits the url then the request is sent.And this request is then routed to mobile core network ,who identifies the msisdn.</p>
+</li>
+<li>
+<p>To give internet access to that specific phone, mobile operator will assign IP to the device.THe operator maintains this mapping IP/Deivce.</p>
+</li>
+<li>
+<p>After identification/authentication,the mobile network ***enriches***(adds header information consisting of phone nnumber from looking at thier mapping table), the request with specific information about the msisdn user that enables a third part to determine the identity of msisdn user.</p>
+</li>
+<li>
+<p>THe headers used by different mobile networks can be different and upto them.</p>
+</li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220510121831-headerenrichment.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
