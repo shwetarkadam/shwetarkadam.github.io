@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       0A7196E7-37F5-42A1-A271-D494224EEABA
+:END:
+#+TITLE: #+title: Header Enrichment
+
+
+HTTP Header Enrichment is a **mobile-network** capability to authenticate/identify a msisdn,who is browsing thru the internet using mobile network.
+- It can be used to identify a mobile subscriber based on HTTP request.The process consists of adding data fields in the HTTP header.
+
+- Event based:This type of HTTP request is ususally triggered in the background by some of app running on the device in response to an event
+
+- for example :User clicking on some button,where the mobile sends various information which the mobile network can use ti identify/authenticate wther msisdn user belongs to thier mobile network or no.So in this way molbile operator knows which user connects to thier network.
+- The mobile operator whitelists certain urls in which a user hits the url then the request is sent.And this request is then routed to mobile core network ,who identifies the msisdn.
+- To give internet access to that specific phone, mobile operator will assign IP to the device.THe operator maintains this mapping IP/Deivce.
+- After identification/authentication,the mobile network ***enriches***(adds header information consisting of phone  nnumber from looking at thier mapping table), the request with specific information about the msisdn user that enables a third part to determine the identity of msisdn user.
+- THe headers used by different mobile networks can be different and upto them.
