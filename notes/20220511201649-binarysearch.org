@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9A690016-F421-42B4-B398-B9D35B76F798
+:END:
+#+TITLE:BinarySearch
+
+
+*** Idenitification
+
+- If the array given is SORTED,then always go for Binary Search approach.
+
+- Mid can be calculated as:
+#+begin_src
+
+ mid= start + (end-start)/2
+#+end_src
+Instead of start+end /2 to avoid Integer overflow (testcases have these)
