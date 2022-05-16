@@ -6,7 +6,6 @@
 My daily needed bindings for doom emacs.
 - Open/Close Treemacs tree : ```SPC o p```
 
-- Fuzzy search using IVY :
-#+begin_comment
+- Fuzzy search using IVY : #+begin_src options
 SPC p f
-#+end_comment
+#+end_src
