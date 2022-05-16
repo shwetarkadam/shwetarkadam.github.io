@@ -4,8 +4,23 @@
 #+TITLE:Doom Emacs Daily Bindings
 
 My daily needed bindings for doom emacs.
-- Open/Close Treemacs tree : ```SPC o p```
+- Open/Close Treemacs tree :
+#+begin_src
 
-- Fuzzy search using IVY : #+begin_src options
-SPC p f
+SPC o p
 #+end_src
+
+
+- Fuzzy search using IVY :
+  Jump file to project
+  #+begin_src
+SPC pf    OR     SPC SPC
+#+end_src
+
+
+
+
+
+
+
+Reference : https://docs.doomemacs.org/latest/modules/completion/ivy/
