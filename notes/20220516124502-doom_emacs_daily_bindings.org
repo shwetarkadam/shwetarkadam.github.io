@@ -12,7 +12,14 @@ SPC o p
 
 
 - Fuzzy search using IVY :
-  Jump file to project
+
+  - Go to the project location and for fuzzy find files
+   #+begin_src
+      SPC SPC
+   #+end_src
+
+
+  - Jump file to project
   #+begin_src
 SPC pf    OR     SPC SPC
 #+end_src
