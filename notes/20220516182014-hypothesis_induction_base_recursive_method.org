@@ -11,11 +11,11 @@ GOAL here is to *make input SMALLER*
 
 - Hypothesis:
   In this, assume a function with its neceesary input and what we expect in that output.
- #+begin_bash
+ #+begin_src
   solveHeightOfBinaryTree(Node root )-> 3
 
   solveHeightOfBinaryTree(Node subnodeAtLevel2) -> 2
- #+end_bash
+ #+end_src
 
 - Induction:
   This invlolves taking a 1 scenario (easiest one ) and storing result in temp or later to be used later
