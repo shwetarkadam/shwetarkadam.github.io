@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6B89BFC3-43F0-4A7A-9C77-A3976EF8FAB4
+:END:
+#+TITLE: Traceroute
+
+traceroute shows you what data travels from computer to the internet and what and how many hops it takes.
+
+- Can be used to solve connection refused errors where you need to find out ast what point or hop it started restrcition.
+
+ #+begin_src
+traceroute google.com
+
+traceroute ip_addr
+ #+end_src
