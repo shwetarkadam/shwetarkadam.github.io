@@ -6,7 +6,6 @@
 My daily needed bindings for doom emacs.
 - Open/Close Treemacs tree :
 #+begin_src
-
 SPC o p
 #+end_src
 
