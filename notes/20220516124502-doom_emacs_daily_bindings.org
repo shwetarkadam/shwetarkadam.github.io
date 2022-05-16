@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       970E200B-54F8-451C-B711-7A73FEBB7431
+:END:
+#+TITLE:Doom Emacs Daily Bindings
+
+My daily needed bindings for doom emacs.
+- Open/Close Treemacs tree : ```SPC o p```
+
+- Fuzzy search using IVY :
+#+begin_lang options
+SPC p f
+
+#+end_lang
