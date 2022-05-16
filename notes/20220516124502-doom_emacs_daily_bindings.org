@@ -18,7 +18,7 @@ SPC pf    OR     SPC SPC
 #+end_src
 
 
-
+- To shift between themes temporarily : SPC h [[id:ae73eed9-0bec-41c6-a7a4-76b83822255f][Recursion]]t
 
 
 

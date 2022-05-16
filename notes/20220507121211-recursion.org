@@ -4,6 +4,6 @@
 #+title: Recursion
 
 Approaches to Recursion acc to Aditya Varma
-- Recursive Tree - Input Output Method
-- Hypothesis Induction Base method (Better for tree ,linked lists)
+- Recursive Tree - Input Output Method (Decision making problems)
+- [[id:0663A376-DA78-47A9-9BE8-4F6E0EC6F311][Hypothesis Induction Base Recursive Method]] (Better for tree ,linked lists)
 - Choice Diagram (DP)

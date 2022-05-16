@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       0663A376-DA78-47A9-9BE8-4F6E0EC6F311
+:END:
+#+TITLE: Hypothesis Induction Base Recursive Method
+
+Hypothesis Induction Base Method :
+
+Better for tree,linked lists,stack using problems.
+
+GOAL here is to *make input SMALLER*
+
+- Hypothesis:
+  In this, assume a function with its neceesary input and what we expect in that output.
+ #+begin_bash
+  solveHeightOfBinaryTree(Node root )-> 3
+
+  solveHeightOfBinaryTree(Node subnodeAtLevel2) -> 2
+ #+end_bash
+
+- Induction:
+  This invlolves taking a 1 scenario (easiest one ) and storing result in temp or later to be used later
+  And then process next element.
+  Make sure you make diagrams and think.
+
+- Base Condition:
+  This can be thought in 2 ways :
+  - Think of the smallest valid input
+    OR
+  - Think of the smalled Invalid input
