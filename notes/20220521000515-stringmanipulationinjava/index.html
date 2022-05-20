@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>Sliding Window – Shweta's Braindump</title>
+<head><title>String Manipulation In Java – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -24,81 +24,15 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Sliding Window</h1>
+<h1 class=collapsed-title>String Manipulation In Java</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507061840-slidingwindow/ alt="Sliding Window" class=permalink><h1>Sliding Window</h1></a>
-<p>Aditya Verma Approach to sliding window :</p>
-<h3 id=identificatiion>Identificatiion :</h3>
-<ol>
-<li>Could be array or string.</li>
-<li>There is a window which is <strong>continous</strong> (doesnt break) .</li>
-<li>Question might ask related to <strong>subarray or substring</strong> .Also it can ask largest or smallest value in the question.</li>
-<li>Window size will be given or the question might ask to find out window size.</li>
-</ol>
-<pre tabindex=0><code class=language-nil data-lang=nil>Window Size | Condition
+<a href=https://notes.codeklutz.com/notes/20220521000515-stringmanipulationinjava/ alt="String Manipulation In Java" class=permalink><h1>String Manipulation In Java</h1></a>
+<h2 id=remove-all-spaces-from-a-string-and-concentate>Remove all SPACES from a string and concentate</h2>
+<pre tabindex=0><code class=language-nil data-lang=nil>s=s.replaceAll(&quot;\\s&quot;,&quot;&quot;);
+</code></pre><h2 id=remove-all-punctuations-from-a-string>Remove all PUNCTUATIONS from a string</h2>
+<pre tabindex=0><code class=language-nil data-lang=nil>s=s.replaceAll(&quot;\\p{Punct}&quot;,&quot;&quot;);
 </code></pre>
-<ul>
-<li>
-<p>2 Types of Sliding window problems:</p>
-<ol>
-<li>Fixed size window: If window size is given then based on some condition we return min or max value.</li>
-<li>Variable size window: We are given some condition and we have to find the window size based on that condition.</li>
-</ol>
-</li>
-</ul>
-<h2 id=variable-size-window>Variable size window:</h2>
-<p>Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum.</p>
-<p><a href=/notes/20220507070237-variablesizeslidingwindowformat/ target=_blank>
-VariableSizeSlidingWindowFormat
-</a>
-</p>
-<table>
-<thead>
-<tr>
-<th>Fixed Size Window</th>
-<th>Variable Size Window</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Max/Min Subarray of size k</td>
-<td>1. Largest/smallest subarray equal to k</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2. First -ve in every min size of k</td>
-<td>2.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3. Count occurence of anagram</td>
-<td>3.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4. Maximum of all subarray of size k</td>
-<td>4. Pick Toy</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5. Max of min of every window size</td>
-<td>5.Minimum window substring.</td>
-</tr>
-</tbody>
-</table>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507061840-slidingwindow.org>Edit this page on GitHub</a></small>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220521000515-stringmanipulationinjava.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
