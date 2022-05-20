@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       97702721-e3c4-4529-8d0e-d41d5fecfbe7
+:END:
+#+title: String Manipulation In Java
+
+******************** Remove all SPACES from a string and concentate
+ #+begin_src
+      s=s.replaceAll("\\s","");
+ #+end_src
+
+******************** Remove all PUNCTUATIONS from a string
+
+#+begin_src
+ s=s.replaceAll("\\p{Punct}","");
+#+end_src
