@@ -23,3 +23,15 @@ int[] example1 = list.stream().mapToInt(i->i).toArray();
 // OR
 int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
   #+end_src
+
+
+************** Fetching particular key from Hashmap based on value
+#+begin_src
+  final Integer r1=r;
+               Integer t=map.entrySet().stream()
+  .filter(e -> e.getValue().equals(r1))
+  .map(Map.Entry::getKey)
+  .findFirst()
+  .orElse(null);
+#+end_src
+final is needed otherwise you will get error *Line 11: error: local variables referenced from a lambda expression must be final or effectively final .filter(e -> e.getValue().equals(r)) ^*
