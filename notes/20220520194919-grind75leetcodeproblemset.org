@@ -5,3 +5,6 @@
 
 
 https://www.techinterviewhandbook.org/grind75
+
+https://www.techinterviewhandbook.org/software-engineering-interview-guide/
+https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions
