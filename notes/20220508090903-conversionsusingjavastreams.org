@@ -5,7 +5,7 @@
 
 Conversions of various data structures using Streams
 
-- int []array -> Integer ArrayList
+************** - int []array -> Integer ArrayList
   #+begin_src
    List<Integer> l=Arrays.stream(nums).boxed().toList();
   #+end_src
@@ -17,7 +17,7 @@ Hence methods like remove() will give Unsupported Operation exception
   List<Integer> l=new ArrayList(Arrays.stream(nums).boxed().toList());
 #+end_src
 
-- Integer ArrayList -> int []array
+************** - Integer ArrayList -> int []array
   #+begin_src
 int[] example1 = list.stream().mapToInt(i->i).toArray();
 // OR
