@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Shweta's Braindump"
 theme = "cortex-dark"
 pygmentsStyle = "dracula"
-
+googleAnalytics="G-3MDX1X0JE5"
 [params]
 email = "shwetakadam.portfolio@gmail.com"
 footer = "Icon by Freepik. Built with ♥ with Org-mode and Hugo."
