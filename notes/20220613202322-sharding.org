@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       76626A71-F270-443A-818B-2D0CD4BAD1B3
+:END:
+#+TITLE: #+title: Sharding
+
+- Horizontal scaling in db context is known as sharding.
+- The practice of adding more servers.
+- Sharding seperates large databases into more smaller ,easily managed parts called shards.
+- Each shard shares the same schema,though the actual data on each shard is unique to the shard.

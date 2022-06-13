@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       90441368-8754-4BFA-8B44-5620675B6ABE
+:END:
+#+TITLE: #+title: Messaging Queues
+
+
+- Messaging queue is a durable compoment whihc supports asynchronous communication.
+- It acts as a buffer and distributes asynchronous requests.
+-
+
+  PRODUCER --> MESSAGE QUEUE <--> CONSUMER
+
+  PRODUCER produces/publishes ---> MESSAGE QUEUE stores the requests ---> CONSUMER is subscribed to the queue and consumes the messages from the queue.
+
+- Decoupling makes the message queue a prefffered choice while building scalable distributed applications.
+- With the queue, the producer can produce messages even when the consumer is not available to process it. Vice versa the consumer can process the messages when the producer is not available.
+
+
+
+  - EG: - Photo customization whihc cludes copying,cropping,blurring etc which take time to complete .
+        - Webservers publish the photo processing jobs in the queue . Photo processing workers picks up job from the queue and asynchronously perform the custmization tasks .
+        - Both the producer and consumer can be scaled independently .
