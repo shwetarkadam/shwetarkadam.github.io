@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>DB Replication – Shweta's Braindump</title>
+<head><title>#+title: Sharding – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -23,48 +23,16 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>DB Replication</h1>
+<h1 class=collapsed-title>#+title: Sharding</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220517185455-db_replication/ alt="DB Replication" class=permalink><h1>DB Replication</h1></a>
-<h2 id=master-slave-concept>Master Slave concept</h2>
+<a href=https://notes.codeklutz.com/notes/20220613202322-sharding/ alt="#+title: Sharding" class=permalink><h1>#+title: Sharding</h1></a>
 <ul>
-<li>
-<p>Master db generally supports only write operations such as INSERT DELETE UPDATE .</p>
-</li>
-<li>
-<p>Slave db gets copies of the data from the master database and only supports read operations.</p>
-</li>
-<li>
-<p>Most apps have high ratio of reads to writes hence no. of slaves > no of master dbs generally.</p>
-</li>
+<li>Horizontal scaling in db context is known as sharding.</li>
+<li>The practice of adding more servers.</li>
+<li>Sharding seperates large databases into more smaller ,easily managed parts called shards.</li>
+<li>Each shard shares the same schema,though the actual data on each shard is unique to the shard.</li>
 </ul>
-<ul>
-<li>
-<p>Advantages of DB replication:</p>
-<ul>
-<li>
-<p><strong>Better Performance</strong> :</p>
-<ul>
-<li>In master-slave model,Since all write updates happen at master & and read operations are distributed across slave nodes.</li>
-<li>This improves performance since it allows more queries to be processed in parallel.</li>
-</ul>
-</li>
-<li>
-<p><strong>Reliability</strong> :</p>
-<ul>
-<li>If one of the dbs is offline or destroyed,data is still preserved. Dont need to worry about data loss because data is replicated across multiple locations.</li>
-</ul>
-</li>
-<li>
-<p>High availability:</p>
-<ul>
-<li>By replicating data across different locations ,your app remains online even if a db is offline as data can be accessed by another db server.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220517185455-db_replication.org>Edit this page on GitHub</a></small>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220613202322-sharding.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>

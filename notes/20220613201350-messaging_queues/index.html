@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>DB Replication – Shweta's Braindump</title>
+<head><title>#+title: Messaging Queues – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -23,48 +23,36 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>DB Replication</h1>
+<h1 class=collapsed-title>#+title: Messaging Queues</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220517185455-db_replication/ alt="DB Replication" class=permalink><h1>DB Replication</h1></a>
-<h2 id=master-slave-concept>Master Slave concept</h2>
+<a href=https://notes.codeklutz.com/notes/20220613201350-messaging_queues/ alt="#+title: Messaging Queues" class=permalink><h1>#+title: Messaging Queues</h1></a>
 <ul>
 <li>
-<p>Master db generally supports only write operations such as INSERT DELETE UPDATE .</p>
+<p>Messaging queue is a durable compoment whihc supports asynchronous communication.</p>
 </li>
 <li>
-<p>Slave db gets copies of the data from the master database and only supports read operations.</p>
+<p>It acts as a buffer and distributes asynchronous requests.</p>
 </li>
 <li>
-<p>Most apps have high ratio of reads to writes hence no. of slaves > no of master dbs generally.</p>
+<p>PRODUCER &ndash;> MESSAGE QUEUE &lt;&ndash;> CONSUMER</p>
+<p>PRODUCER produces/publishes &mdash;> MESSAGE QUEUE stores the requests &mdash;> CONSUMER is subscribed to the queue and consumes the messages from the queue.</p>
+</li>
+<li>
+<p>Decoupling makes the message queue a prefffered choice while building scalable distributed applications.</p>
+</li>
+<li>
+<p>With the queue, the producer can produce messages even when the consumer is not available to process it. Vice versa the consumer can process the messages when the producer is not available.</p>
 </li>
 </ul>
 <ul>
-<li>
-<p>Advantages of DB replication:</p>
+<li>EG: - Photo customization whihc cludes copying,cropping,blurring etc which take time to complete .
 <ul>
-<li>
-<p><strong>Better Performance</strong> :</p>
-<ul>
-<li>In master-slave model,Since all write updates happen at master & and read operations are distributed across slave nodes.</li>
-<li>This improves performance since it allows more queries to be processed in parallel.</li>
-</ul>
-</li>
-<li>
-<p><strong>Reliability</strong> :</p>
-<ul>
-<li>If one of the dbs is offline or destroyed,data is still preserved. Dont need to worry about data loss because data is replicated across multiple locations.</li>
-</ul>
-</li>
-<li>
-<p>High availability:</p>
-<ul>
-<li>By replicating data across different locations ,your app remains online even if a db is offline as data can be accessed by another db server.</li>
+<li>Webservers publish the photo processing jobs in the queue . Photo processing workers picks up job from the queue and asynchronously perform the custmization tasks .</li>
+<li>Both the producer and consumer can be scaled independently .</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220517185455-db_replication.org>Edit this page on GitHub</a></small>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220613201350-messaging_queues.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
