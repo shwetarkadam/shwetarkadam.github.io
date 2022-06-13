@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       90441368-8754-4BFA-8B44-5620675B6ABE
 :END:
-#+TITLE: #+title: Messaging Queues
+#+TITLE: Messaging Queues
 
 
 - Messaging queue is a durable compoment whihc supports asynchronous communication.
