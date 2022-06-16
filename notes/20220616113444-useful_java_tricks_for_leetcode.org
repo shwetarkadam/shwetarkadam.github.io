@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       73FFEAAD-6446-4962-A582-86299F40594A
+:END:
+#+TITLE:Useful Java Tricks for LeetCode
+
+[[id:97702721-e3c4-4529-8d0e-d41d5fecfbe7][String Manipulation In Java]]
+
+[[id:89384a06-831e-46ea-96f6-311da9bb625e][Conversions Using Java Streams]]
+
+
+[[id:EB54E5EC-494C-4E5D-97C3-4616F927F742][Lists HashMap Sets Iterators Java]]

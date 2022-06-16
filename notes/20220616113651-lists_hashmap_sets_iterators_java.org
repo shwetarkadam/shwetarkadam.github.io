@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       EB54E5EC-494C-4E5D-97C3-4616F927F742
+:END:
+#+TITLE: Lists HashMap Sets Iterators Java
+
+
+****************************  Return element from a set having single element
+
+Case where you know you will have only single element in list after your processing and wish to return the element and
+you dont know what is the actual class
+#+begin_java
+
+Element ele= set.iterator().next();
+
+OR
+
+return set.iterator().next();
+#+end_java
