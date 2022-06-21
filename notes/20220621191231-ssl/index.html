@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Recursion – Shweta's Braindump</title>
+<head><title>SSL – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -23,19 +24,47 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Recursion</h1>
+<h1 class=collapsed-title>SSL</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507121211-recursion/ alt=Recursion class=permalink><h1>Recursion</h1></a>
-<p>Approaches to Recursion acc to Aditya Varma</p>
+<a href=https://notes.codeklutz.com/notes/20220621191231-ssl/ alt=SSL class=permalink><h1>SSL</h1></a>
+<p>Commands to debug issues related to ssl</p>
 <ul>
-<li>Recursive Tree - Input Output Method (Decision making problems)</li>
-<li><a href=/notes/20220516182014-hypothesis_induction_base_recursive_method/ target=_blank>
-Hypothesis Induction Base Recursive Method
-</a>
-(Better for tree ,linked lists)</li>
-<li>Choice Diagram (DP)</li>
+<li>Check if website cert has expired:</li>
 </ul>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507121211-recursion.org>Edit this page on GitHub</a></small>
+<pre tabindex=0><code class=language-nil data-lang=nil>
+```  openssl s_client -showcerts -connect google.com:443 2&gt; /dev/null |   openssl x509 -noout -dates```
+
+notBefore=Aug 19 08:07:15 2020 GMT
+notAfter=Aug 24 23:59:59 2021 GMT
+
+
+ | openssl x509 -noout -issuer -dates -subject -serial
+
+</code></pre><ul>
+<li>Print certs from cacerts or any file using keytool command
+<pre tabindex=0><code class=language-nil data-lang=nil>keytool -v -keystore YOUR_PC/jdk/Contents/Home/jre/lib/security/cacerts -list
+
+</code></pre></li>
+</ul>
+<ul>
+<li>Convert certificate into appropriate format
+<a href=https://knowledge.digicert.com/solution/SO26449.html target=_blank>
+https://knowledge.digicert.com/solution/SO26449.html<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+</a>
+</li>
+</ul>
+<ul>
+<li>Command to get private key and cert from p12 file</li>
+</ul>
+<pre tabindex=0><code class=language-nil data-lang=nil>  for client cert it will be
+openssl pkcs12 -in your_p12_file.p12 -out client.pem -clcerts -nokeys
+
+
+
+for private key it will be
+openssl pkcs12 -in your_p12_file.p12 -out key.pem -nocerts
+</code></pre>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220621191231-ssl.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
