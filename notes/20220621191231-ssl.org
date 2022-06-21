@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       8CE852A7-818D-46C3-B77B-6A82CAC5A408
+:END:
+#+TITLE: SSL
+
+Commands to debug issues related to ssl
+
+
+- Check if website  cert has expired:
+#+begin_src
+
+```  openssl s_client -showcerts -connect google.com:443 2> /dev/null |   openssl x509 -noout -dates```
+
+notBefore=Aug 19 08:07:15 2020 GMT
+notAfter=Aug 24 23:59:59 2021 GMT
+
+
+ | openssl x509 -noout -issuer -dates -subject -serial
+
+#+end_src
+
+
+- Print certs from cacerts or any file using keytool command
+
+ #+begin_src
+keytool -v -keystore YOUR_PC/jdk/Contents/Home/jre/lib/security/cacerts -list
+
+ #+end_src
+
+
+- Convert certificate into appropriate format
+  https://knowledge.digicert.com/solution/SO26449.html
+
+
+- Command to get private key and cert from p12 file
+
+
+#+begin_src
+  for client cert it will be
+openssl pkcs12 -in your_p12_file.p12 -out client.pem -clcerts -nokeys
+
+
+
+for private key it will be
+openssl pkcs12 -in your_p12_file.p12 -out key.pem -nocerts
+#+end_src
