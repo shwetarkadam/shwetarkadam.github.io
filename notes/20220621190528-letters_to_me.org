@@ -13,7 +13,7 @@ Migrating https://letters.codeklutz.com/ to this braindump to make myself easier
 
 
 
-- Web extension that converts video audio to text and stores it in file
+********************  Web extension that converts video audio to text and stores it in file
 
 27 February,2022, Tuesday @4:40pm
 
@@ -28,7 +28,7 @@ I came across a situation at work today where I had to explain a problem having 
 
 Hence the idea of having a web extension which quickly records and Makes into a gif arose.
 
-- Using google sheets as a database???
+********************  Using google sheets as a database???
 
 12 February,2022, Saturday @4:30am
 
@@ -37,7 +37,7 @@ I get the wackiest ideas at night but as I have been working on a small side pro
 And then my mind wandered as to what alternative I can use as a database? I thought of two things:- Firebase as a primary database and second one which sounds weird at first is google sheets.
 
 Google sheets is free and it has an API for small projects maybe I can use it as a db .Just maybe it might work.
-- Which approach for my minimal note taking tool?
+********************  Which approach for my minimal note taking tool?
 
 11 February,2022,Friday @12:28pm
 
@@ -51,7 +51,7 @@ OR should I keep the note taking link based like how paste bin gives you specifi
 
 OR should I keep it session based? But then I will have to keep the session alive for ever doesn’t seem like a good approach.
 
-- SMS messages or push notifications to myself.
+********************  SMS messages or push notifications to myself.
 
 7 February ,2022,Monday @11:45 am
 
@@ -59,7 +59,7 @@ These days I pay attention more to my sms messages than any other app(the shopah
 
 I could use something like go to send sms or if sms implementation becomes a pain there are always push notifications.Could use rest protocol to send sms.Need to research this more. I could use some sort of web app which configures what text and sms to send based on specific times , configure to send the SMS at that time.
 
-- Explaining Why this Tech or study notes on practice repo readme pages.
+********************  Explaining Why this Tech or study notes on practice repo readme pages.
 
 7 February ,2022,Monday @2:09 am
 
@@ -71,7 +71,7 @@ I could even explain it here but it might get too verbose so I would only explai
 
 But in general even I should start posting my notes on practice repos readme.
 
-- Need to decide on a minimalist ui or framework for small quick projects.
+********************  Need to decide on a minimalist ui or framework for small quick projects.
 
 6 February,2022 ,Sunday @4:12am
 
@@ -84,7 +84,7 @@ I have been using spacemacs as my note taking tool these days .It does the job r
 
 Would prefer if this note taking system was browser based so if I had one less app to switch to. With a minimalist UI.
 
-- Browser app or command line to write to it to here
+********************  Browser app or command line to write to it to here
 
 5 February,2022, Saturday @ 2:04pm
 
@@ -98,7 +98,7 @@ But rather create a small page which takes input and writes to this file in this
 
 For command line tool I will still need GitHub login creds to write to this which sort of defeats the purpose of not using GitHub.
 
-- Audio blog feature on my blog.
+********************  Audio blog feature on my blog.
 
 5 February, 2022, Friday @ 4:50am
 
@@ -106,7 +106,7 @@ Need to add speech to text feature on my blog. I found a old software which give
 
 PowerAutomate desktop in windows seems like a good option but isn’t free for normies ,only students and professionals.Could also dabble within desktop testing tools.
 
-- FAT-Find Among Tabs web extension.
+********************  FAT-Find Among Tabs web extension.
 
 5 February, 2022, Friday @ 4:29am
 
@@ -118,7 +118,7 @@ I was thinking of chrome extension before but since I switched to mozilla,cross 
 
 It could have a simple UI taking some input but that input keyword needs to be searched across all tabs within a window (different windows not sure if it’s possible yet) and highlight maybe the top tab part.Also searching the tab within the tab titles.
 
-- Unpolished scrambling thoughts
+********************  Unpolished scrambling thoughts
 
 4 February,2022 @10pm
 
