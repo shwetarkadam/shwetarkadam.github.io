@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       2973662E-FE91-4BFC-A519-CC017B96D452
+:END:
+#+TITLE: Kafka Features And Usecases
+
+********************** Features
+
+************************ Distributed , resilent architecture
+
+************************ Fault tolerant
+
+************************ Horizonatal scalability
+
+************************* can scale to 100s brokers
+
+************************* can scale upto millions of messages
+
+************************* High Performance
+
+********************* Use cases
+
+************************ Messaging System ,Activity Tracker,Application logs gathering ,Gather metrcis from different lcations
+
+************************ Stream priocessing with kafka streams api
+
+************************ Decoupling of system dependencies
+
+************************ Microservices pub/sub
+
+************************ Integration with spark,flink,storm,hadoopand many other big data technologies .
+
+********************* Company Examples :
+
+*************************  Netflix ueses Kafka to apply recommendations in real time while watching tv shows
+
+************************* Uber uses Kafak to gather user ,taxi and trip data in real time to cpmpute and forecast demand and compute surging price in real time .
+
+************************* Linkdln uses Kafka to prevent spam and collect user interactions to make better connection recommendations in real time .
+
+
+REMEMBER!
+Kafka is only used as a transportation mechanism !
+which allows huge data flows in your company

@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       5F0CF5D1-46B2-49F3-A925-62304A88F101
+:END:
+#+TITLE: Why to Use Kafka
+
+************* Problem
+
+
+************************* Companies usually have some data which moves from SOURCE SYSTEM -> TARGET SYSTEM.
+
+************************* Initally it is simply just write code -> take the data and extract it -> transform the data -> Load the data .This sort of makes 1 integration.
+
+************************* But as company evolve the number of source and target systems increase.
+
+************************* Each Integration itself comes with its own set of problems such as :
+
+************************** Protocol: How the data is transported (HTTP,REST,TCP,JDBC,FTP)
+
+************************** Data Format : How the data is parsed? (CSV,JSON,XML,Protobuf)
+
+************************** Data schema and evolution : How the data is shaped and how it may change
+
+************************* Each source system will also have increased load from its connections .
+
+KAFKA solves this problems
+
+
+
+        SOURCE SYSTEM (Producer)
+                ||
+                \/
+                Kafka(sends and receives data )
+                ||
+                \/
+        TARGET SYSTEM (Consumer)
+
+************************* Source is responsible for producing data and Kafka will generate a data stream and take all that source data into the stream.
+
+************************* Whenever the target system need to consume data ,it can tap into the kafka data stream.
+
+************************* SOURCE SYSTEM ex: Website events ,FInance transactions ,user interactions
+
+************************* TARGET SYSTEM ex: Analytics ,Audit , Email systems
