@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>Sliding Window – Shweta's Braindump</title>
+<head><title>Why to Use Kafka – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -24,81 +24,90 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Sliding Window</h1>
+<h1 class=collapsed-title>Why to Use Kafka</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507061840-slidingwindow/ alt="Sliding Window" class=permalink><h1>Sliding Window</h1></a>
-<p>Aditya Verma Approach to sliding window :</p>
-<h3 id=identificatiion>Identificatiion :</h3>
-<ol>
-<li>Could be array or string.</li>
-<li>There is a window which is <strong>continous</strong> (doesnt break) .</li>
-<li>Question might ask related to <strong>subarray or substring</strong> .Also it can ask largest or smallest value in the question.</li>
-<li>Window size will be given or the question might ask to find out window size.</li>
-</ol>
-<pre tabindex=0><code class=language-nil data-lang=nil>Window Size | Condition
-</code></pre>
+<a href=https://notes.codeklutz.com/notes/20220705101245-why_to_use_kafka/ alt="Why to Use Kafka" class=permalink><h1>Why to Use Kafka</h1></a>
+<h2 id=problem>Problem</h2>
+<ul>
+<li>Companies usually have some data which moves from SOURCE SYSTEM -> TARGET SYSTEM.</li>
+</ul>
+<ul>
+<li>Initally it is simply just write code -> take the data and extract it -> transform the data -> Load the data .This sort of makes 1 integration.</li>
+</ul>
+<ul>
+<li>But as company evolve the number of source and target systems increase.</li>
+</ul>
 <ul>
 <li>
-<p>2 Types of Sliding window problems:</p>
-<ol>
-<li>Fixed size window: If window size is given then based on some condition we return min or max value.</li>
-<li>Variable size window: We are given some condition and we have to find the window size based on that condition.</li>
-</ol>
+<p>Each Integration itself comes with its own set of problems such as :</p>
+<ul>
+<li>Protocol: How the data is transported (HTTP,REST,TCP,JDBC,FTP)</li>
+</ul>
+<ul>
+<li>Data Format : How the data is parsed? (CSV,JSON,XML,Protobuf)</li>
+</ul>
+<ul>
+<li>Data schema and evolution : How the data is shaped and how it may change</li>
+</ul>
 </li>
 </ul>
-<h2 id=variable-size-window>Variable size window:</h2>
-<p>Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum.</p>
-<p><a href=/notes/20220507070237-variablesizeslidingwindowformat/ target=_blank>
-VariableSizeSlidingWindowFormat
-</a>
-</p>
+<ul>
+<li>
+<p>Each source system will also have increased load from its connections .</p>
+<p>KAFKA solves this problems</p>
+<p>SOURCE SYSTEM (Producer)</p>
 <table>
 <thead>
 <tr>
-<th>Fixed Size Window</th>
-<th>Variable Size Window</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1. Max/Min Subarray of size k</td>
-<td>1. Largest/smallest subarray equal to k</td>
-</tr>
-<tr>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td>2. First -ve in every min size of k</td>
-<td>2.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3. Count occurence of anagram</td>
-<td>3.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4. Maximum of all subarray of size k</td>
-<td>4. Pick Toy</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5. Max of min of every window size</td>
-<td>5.Minimum window substring.</td>
 </tr>
 </tbody>
 </table>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507061840-slidingwindow.org>Edit this page on GitHub</a></small>
+<p>\/
+Kafka(sends and receives data )</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code> \\/
+</code></pre>
+<p>TARGET SYSTEM (Consumer)</p>
+</li>
+</ul>
+<ul>
+<li>Source is responsible for producing data and Kafka will generate a data stream and take all that source data into the stream.</li>
+</ul>
+<ul>
+<li>Whenever the target system need to consume data ,it can tap into the kafka data stream.</li>
+</ul>
+<ul>
+<li>SOURCE SYSTEM ex: Website events ,FInance transactions ,user interactions</li>
+</ul>
+<ul>
+<li>TARGET SYSTEM ex: Analytics ,Audit , Email systems</li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220705101245-why_to_use_kafka.org>Edit this page on GitHub</a></small>
+</div>
+<div class=bl-section>
+<h4>Links to this note</h4>
+<div class=backlinks>
+<ul>
+<li><a href=/notes/20220705094105-apache_kafka/>Apache Kafka</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>

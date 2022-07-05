@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>Sliding Window – Shweta's Braindump</title>
+<head><title>Kafka Features And Usecases – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -24,81 +23,70 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Sliding Window</h1>
+<h1 class=collapsed-title>Kafka Features And Usecases</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507061840-slidingwindow/ alt="Sliding Window" class=permalink><h1>Sliding Window</h1></a>
-<p>Aditya Verma Approach to sliding window :</p>
-<h3 id=identificatiion>Identificatiion :</h3>
-<ol>
-<li>Could be array or string.</li>
-<li>There is a window which is <strong>continous</strong> (doesnt break) .</li>
-<li>Question might ask related to <strong>subarray or substring</strong> .Also it can ask largest or smallest value in the question.</li>
-<li>Window size will be given or the question might ask to find out window size.</li>
-</ol>
-<pre tabindex=0><code class=language-nil data-lang=nil>Window Size | Condition
-</code></pre>
+<a href=https://notes.codeklutz.com/notes/20220705102607-kafka_features_and_usecases/ alt="Kafka Features And Usecases" class=permalink><h1>Kafka Features And Usecases</h1></a>
+<h3 id=features>Features</h3>
+<ul>
+<li>Distributed , resilent architecture</li>
+</ul>
+<ul>
+<li>Fault tolerant</li>
+</ul>
 <ul>
 <li>
-<p>2 Types of Sliding window problems:</p>
-<ol>
-<li>Fixed size window: If window size is given then based on some condition we return min or max value.</li>
-<li>Variable size window: We are given some condition and we have to find the window size based on that condition.</li>
-</ol>
+<p>Horizonatal scalability</p>
+<ul>
+<li>can scale to 100s brokers</li>
+</ul>
+<ul>
+<li>can scale upto millions of messages</li>
+</ul>
+<ul>
+<li>High Performance</li>
+</ul>
 </li>
 </ul>
-<h2 id=variable-size-window>Variable size window:</h2>
-<p>Example:If a partciaulr sum is given ,find the largest sub array (window size) having that sum.</p>
-<p><a href=/notes/20220507070237-variablesizeslidingwindowformat/ target=_blank>
-VariableSizeSlidingWindowFormat
-</a>
-</p>
-<table>
-<thead>
-<tr>
-<th>Fixed Size Window</th>
-<th>Variable Size Window</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Max/Min Subarray of size k</td>
-<td>1. Largest/smallest subarray equal to k</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2. First -ve in every min size of k</td>
-<td>2.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3. Count occurence of anagram</td>
-<td>3.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>4. Maximum of all subarray of size k</td>
-<td>4. Pick Toy</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>5. Max of min of every window size</td>
-<td>5.Minimum window substring.</td>
-</tr>
-</tbody>
-</table>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507061840-slidingwindow.org>Edit this page on GitHub</a></small>
+<h2 id=use-cases>Use cases</h2>
+<ul>
+<li>Messaging System ,Activity Tracker,Application logs gathering ,Gather metrcis from different lcations</li>
+</ul>
+<ul>
+<li>Stream priocessing with kafka streams api</li>
+</ul>
+<ul>
+<li>Decoupling of system dependencies</li>
+</ul>
+<ul>
+<li>Microservices pub/sub</li>
+</ul>
+<ul>
+<li>Integration with spark,flink,storm,hadoopand many other big data technologies .</li>
+</ul>
+<h2 id=company-examples>Company Examples :</h2>
+<ul>
+<li>Netflix ueses Kafka to apply recommendations in real time while watching tv shows</li>
+</ul>
+<ul>
+<li>Uber uses Kafak to gather user ,taxi and trip data in real time to cpmpute and forecast demand and compute surging price in real time .</li>
+</ul>
+<ul>
+<li>
+<p>Linkdln uses Kafka to prevent spam and collect user interactions to make better connection recommendations in real time .</p>
+<p>REMEMBER!
+Kafka is only used as a transportation mechanism !
+which allows huge data flows in your company</p>
+</li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220705102607-kafka_features_and_usecases.org>Edit this page on GitHub</a></small>
+</div>
+<div class=bl-section>
+<h4>Links to this note</h4>
+<div class=backlinks>
+<ul>
+<li><a href=/notes/20220705094105-apache_kafka/>Apache Kafka</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
