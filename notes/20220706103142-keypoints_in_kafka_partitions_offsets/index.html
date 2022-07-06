@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>Functional Programming – Shweta's Braindump</title>
+<head><title>KeyPoints in Kafka Partitions/Offsets – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -23,64 +23,24 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Functional Programming</h1>
+<h1 class=collapsed-title>KeyPoints in Kafka Partitions/Offsets</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220507070353-functionalprogramming/ alt="Functional Programming" class=permalink><h1>Functional Programming</h1></a>
-<p>We have :</p>
-<ol>
-<li>Inhererent Complexiity: Complexiitystemming from domain</li>
-<li>Accidental complexity: Complexity we create while trying to deal with inehrent complexity.</li>
-</ol>
-<p>> Functional Programming removes Accidental Complexity.</p>
-<p>Functional Programming properties:</p>
-<h2 id=assignment-less-programming>Assignment less Programming:</h2>
-<p>Much like how we dont use goto while coding but its okay for compiler to use go under the hood.</p>
-<p>goto is to strucutred programming
-assignment is to funtional programming (We try to avoid assignments)</p>
-<h2 id=immutable-state>Immutable state:</h2>
-<p>We can make smart copies of objects instead of true copy or fully copy like trie data strcuture.</p>
-<h2 id=functions-as-first-class-citizens-dot>Functions as First class citizens.</h2>
-<p>We treat functions as we do to objects.
-A higher order function can :</p>
-<ol>
-<li>We can pass function to function.</li>
-<li>We can create function within a function.</li>
-<li>We can return function from function.</li>
-</ol>
-<h2 id=pure-functions>Pure Functions</h2>
-<h3 id=pure-functions-dont-have-side-effects>Pure Functions dont have side effects</h3>
-<p>Pure function:</p>
-<ol>
-<li>
-<p>Does not change anything</p>
-</li>
-<li>
-<p>Does not depend on anything that changes:
-a. The function result value cannot depend on any hidden information or state that may change while program execution proceeds or between different executions of the program * We want lazy evaluation.</p>
-<p>b. If our function depends on something which changes outside the function it cannot be lazy.</p>
-</li>
-</ol>
-<h2 id=functional-style-vs-purely-functional-programming>Functional Style vs Purely Functional Programming</h2>
-<p>Purely functional programming will not allow any mutability.(Haskell)
-Functional style Programming provides hgiher order functions (Java,C#)</p>
-<h2 id=lambda-expression>Lambda Expression:</h2>
-<p>Now lets consider method or Lambda Expression(anonymous Function)
-Only parameters list, body.</p>
-<p>Inferred return type based on context, no name needed.</p>
-<p>Passed to higher-order functions.</p>
-<h2 id=familiar-vs-simple>Familiar vs Simple</h2>
-<p>Complex (not simple) things seem easy to think about when they become familiar. Familiarity with something does not imply that thing is simple.</p>
-<p><a href=/notes/20220507070445-iterators/ target=_blank>
-Iterators
-</a>
-</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220507070353-functionalprogramming.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20220706103142-keypoints_in_kafka_partitions_offsets/ alt="KeyPoints in Kafka Partitions/Offsets" class=permalink><h1>KeyPoints in Kafka Partitions/Offsets</h1></a>
+<h2 id=once-data-is-written-to-a-partition-it-cannot-be-changed--immutability--dot>Once data is written to a partition it cannot be changed(immutability).</h2>
+<h2 id=data-is-kept-only-for-a-limited-amount-of-time--default-is-1-week-configyurable--then-it-disappears-dot>Data is kept only for a limited amount of time (default is 1 week -configyurable) then it disappears.</h2>
+<h2 id=offset-only-have-a-meaning-for-a-specific-partition-dot>Offset only have a meaning for a specific partition.</h2>
+<h4 id=eg-offset-3-in-part-0-doesnt-represent-the-same-data-as-offset-3-in-partition1-dot>Eg: Offset 3 in part 0 doesnt represent the same data as offset 3 in partition1.</h4>
+<h4 id=offsets-are-not-reused-even-if-previous-message-is-deleted-dot>Offsets are not reused even if previous message is deleted.</h4>
+<h2 id=order-is-guranteed-only-within-a-partition--not-across-partitions--dot>Order is guranteed only within a partition(not across partitions).</h2>
+<h2 id=data-is-assigned-randomly-to-a-paprtition-unless-a-key-is-provided-dot>Data is assigned randomly to a paprtition unless a key is provided .</h2>
+<h2 id=you-can-have-as-many-partitions-as-you-want-dot>You can have as many partitions as you want .</h2>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220706103142-keypoints_in_kafka_partitions_offsets.org>Edit this page on GitHub</a></small>
 </div>
 <div class=bl-section>
 <h4>Links to this note</h4>
 <div class=backlinks>
 <ul>
-<li><a href=/notes/20220507133804-javastreams/>Java Streams</a></li>
+<li><a href=/notes/20220706102404-kafka_partitions_and_offsets/>Kafka Partitions and Offsets</a></li>
 </ul>
 </div>
 </div>
