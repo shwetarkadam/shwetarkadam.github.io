@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>Conversions Using Java Streams – Shweta's Braindump</title>
+<head><title>Kafka Message Serializers – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -24,38 +23,22 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Conversions Using Java Streams</h1>
+<h1 class=collapsed-title>Kafka Message Serializers</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220508090903-conversionsusingjavastreams/ alt="Conversions Using Java Streams" class=permalink><h1>Conversions Using Java Streams</h1></a>
-<p>Conversions of various data structures using Streams</p>
-<h2 id=int-array-integer-arraylist>- int []array -> Integer ArrayList</h2>
-<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; l=Arrays.stream(nums).boxed().toList();
-</code></pre><p>This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array&rsquo;s length cannot be change the lengthof this list cannot be changed too.
-Hence methods like remove() will give Unsupported Operation exception</p>
-<ul>
-<li>To solve this,just create a &ldquo;real&rdquo; new list</li>
-</ul>
-<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; l=new ArrayList(Arrays.stream(nums).boxed().toList());
-</code></pre><h2 id=integer-arraylist-int-array>- Integer ArrayList -> int []array</h2>
-<pre tabindex=0><code class=language-nil data-lang=nil>int[] example1 = list.stream().mapToInt(i-&gt;i).toArray();
-// OR
-int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
-</code></pre><h2 id=fetching-particular-key-from-hashmap-based-on-value>Fetching particular key from Hashmap based on value</h2>
-<pre tabindex=0><code class=language-nil data-lang=nil>final Integer r1=r;
-	     Integer t=map.entrySet().stream()
-.filter(e -&gt; e.getValue().equals(r1))
-.map(Map.Entry::getKey)
-.findFirst()
-.orElse(null);
-</code></pre><p>final is needed otherwise you will get error <strong>Line 11: error: local variables referenced from a lambda expression must be final or effectively final .filter(e -> e.getValue().equals(r)) ^</strong></p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220508090903-conversionsusingjavastreams.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20220706104527-kafka_message_serializers/ alt="Kafka Message Serializers" class=permalink><h1>Kafka Message Serializers</h1></a>
+<p>How do the messages get created? Using Message Serizliers</p>
+<h2 id=kafka-only-accepts-bytes-as-input-from-producers-and-sends-bytes-as-output-to-consumers-dot>Kafka only accepts bytes as input from producers and sends bytes as output to consumers.</h2>
+<h2 id=message-serializers-means-transforming-objects-data-inot-bytes-dot>Message Serializers means transforming objects/data inot bytes.</h2>
+<h2 id=they-are-used-on-value-and-key>They are used on value and key</h2>
+<p>Key object 123 -> INT -> Key serializer : Integer serializer(smart enough to figure it out ) -> BYTES -> Key : binary</p>
+<p>Value object &ldquo;123healloi&rdquo; -> STRING -> Value serializer : String serializer(smart enough to figure it out ) -> BYTES -> Value : binary</p>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220706104527-kafka_message_serializers.org>Edit this page on GitHub</a></small>
 </div>
 <div class=bl-section>
 <h4>Links to this note</h4>
 <div class=backlinks>
 <ul>
-<li><a href=/notes/20220507133804-javastreams/>Java Streams</a></li>
-<li><a href=/notes/20220616113444-useful_java_tricks_for_leetcode/>Useful Java Tricks for LeetCode</a></li>
+<li><a href=/notes/20220705094105-apache_kafka/>Apache Kafka</a></li>
 </ul>
 </div>
 </div>
