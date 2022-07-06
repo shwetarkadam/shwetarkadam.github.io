@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       7FC25C75-CC15-4E14-A09D-922D684F8F95
+:END:
+#+TITLE:  Kafka Message Serializers
+
+How do the messages get created? Using Message Serizliers
+****************** Kafka only accepts bytes as input from producers and sends bytes as output to consumers.
+
+****************** Message Serializers means transforming objects/data inot bytes.
+
+****************** They are used on value and key
+
+
+Key object 123 -> INT -> Key serializer : Integer serializer(smart enough to figure it out ) -> BYTES -> Key : binary
+
+
+
+
+Value  object "123healloi" -> STRING -> Value serializer : String serializer(smart enough to figure it out ) -> BYTES -> Value : binary

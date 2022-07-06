@@ -12,3 +12,5 @@
 [[id:BA3838E3-4D59-4A3F-BB6D-019F450E1091][Kafka Partitions and Offsets]]
 
 [[id:A5C1E4EF-3A86-4C0B-9E17-E97E0B7C0995][Kafka Producers]]
+
+[[id:7FC25C75-CC15-4E14-A09D-922D684F8F95][Kafka Message Serializers]]
