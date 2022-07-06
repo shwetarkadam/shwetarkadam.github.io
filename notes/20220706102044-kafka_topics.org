@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       22991FBA-DD62-4D0B-811B-6CEA159B9010
+:END:
+#+TITLE:  Kafka Topics
+
+********************  Topic: a particulart stream of data .
+
+******************** Like a table in a db (without constraints)
+
+******************** A sequence of messages is called data stream.
+
+******************** You can have as many topics as you want
+
+******************** Topics are identified by NAME.
+
+******************** Any kind of message format (CSV,JSON,XML)
+
+******************** You cannot query topics instead use  Kafka producers to send data and consumers to read the data
