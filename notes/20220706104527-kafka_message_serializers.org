@@ -4,11 +4,11 @@
 #+TITLE:  Kafka Message Serializers
 
 How do the messages get created? Using Message Serizliers
-****************** Kafka only accepts bytes as input from producers and sends bytes as output to consumers.
+*********************************** Kafka only accepts bytes as input from producers and sends bytes as output to consumers.
 
-****************** Message Serializers means transforming objects/data inot bytes.
+*********************************** Message Serializers means transforming objects/data inot bytes.
 
-****************** They are used on value and key
+*********************************** They are used on value and key
 
 
 Key object 123 -> INT -> Key serializer : Integer serializer(smart enough to figure it out ) -> BYTES -> Key : binary

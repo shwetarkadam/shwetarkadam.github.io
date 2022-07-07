@@ -4,13 +4,13 @@
 #+TITLE: Kafka Partitions and Offsets
 
 
-************* Topics are splity into partitions.
+****************************** Topics are splity into partitions.
 
-************* Messages within each artition are ordered.
+****************************** Messages within each artition are ordered.
 
-************* Each Message within a partition gets an incrementl id called offset.
+****************************** Each Message within a partition gets an incrementl id called offset.
 
-************* Kafka topics are IMMUTABLE .Once data is written into a partition it cannot be changed (NO UPDATE<EDIT<DELETE)
+****************************** Kafka topics are IMMUTABLE .Once data is written into a partition it cannot be changed (NO UPDATE<EDIT<DELETE)
 
 
                    Partition 0
@@ -22,17 +22,17 @@ Kafka TOPIC
 
                     Partition 1
 
-************* Eg: truck_gps
+****************************** Eg: truck_gps
 
-************** If you have a fleet of trucks . Each truck reports its GPS position to Kafka.
+******************************* If you have a fleet of trucks . Each truck reports its GPS position to Kafka.
 
-************** Each truck will send a message to Kafka every 20 seconds .
+******************************* Each truck will send a message to Kafka every 20 seconds .
 
-************** Each message will contain :
+******************************* Each message will contain :
 
-**************** truck id
+********************************* truck id
 
-**************** truck position (long. and lat.)
+********************************* truck position (long. and lat.)
 
 
 #+begin_src

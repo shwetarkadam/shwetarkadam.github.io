@@ -3,16 +3,16 @@
 :END:
 #+TITLE:  Kafka Topics
 
-********************  Topic: a particulart stream of data .
+*************************************  Topic: a particulart stream of data .
 
-******************** Like a table in a db (without constraints)
+************************************* Like a table in a db (without constraints)
 
-******************** A sequence of messages is called data stream.
+************************************* A sequence of messages is called data stream.
 
-******************** You can have as many topics as you want
+************************************* You can have as many topics as you want
 
-******************** Topics are identified by NAME.
+************************************* Topics are identified by NAME.
 
-******************** Any kind of message format (CSV,JSON,XML)
+************************************* Any kind of message format (CSV,JSON,XML)
 
-******************** You cannot query topics instead use  Kafka producers to send data and consumers to read the data
+************************************* You cannot query topics instead use  Kafka producers to send data and consumers to read the data

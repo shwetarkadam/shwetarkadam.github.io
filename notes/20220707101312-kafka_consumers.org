@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       628F75BC-8AAA-436E-A17D-5DD612DE0A00
+:END:
+#+TITLE: Kafka Consumers
+
+************************************ Consumers read data from topic (identified by name )-pull model
+
+************************************ Consumers automatically known which broker to read data from .
+
+************************************ In case of broker failures consumers know how to recover
+
+************************************ Data is read in order from low offset to high offset within each partition.
+
+************** Consumer Deserializers
+
+************************************* Deserializers indicates how to transform bytes into objects/data.
+
+************************************* They are used on value and key of message.
+
+************************************* Common deserializers : String ,int float ,protobuf,avro
+
+************************************* The serialization/deserialization type must not change during a topic lifeccyl(instead create a new topic)

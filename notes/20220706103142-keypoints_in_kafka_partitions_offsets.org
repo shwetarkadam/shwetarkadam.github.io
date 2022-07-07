@@ -4,18 +4,18 @@
 #+TITLE: KeyPoints in Kafka Partitions/Offsets
 
 
-********************** Once data is written to a partition it cannot be changed(immutability).
+*************************************** Once data is written to a partition it cannot be changed(immutability).
 
-********************** Data is kept only for a limited amount of time (default is 1 week -configyurable) then it disappears.
+*************************************** Data is kept only for a limited amount of time (default is 1 week -configyurable) then it disappears.
 
-********************** Offset only have a meaning for a specific partition.
+*************************************** Offset only have a meaning for a specific partition.
 
-************************ Eg: Offset 3 in part 0 doesnt represent the same data as offset 3 in partition1.
+***************************************** Eg: Offset 3 in part 0 doesnt represent the same data as offset 3 in partition1.
 
-************************ Offsets are not reused even if previous message is deleted.
+***************************************** Offsets are not reused even if previous message is deleted.
 
-********************** Order is guranteed only within a partition(not across partitions).
+*************************************** Order is guranteed only within a partition(not across partitions).
 
-********************** Data is assigned randomly to a paprtition unless a key is provided .
+*************************************** Data is assigned randomly to a paprtition unless a key is provided .
 
-********************** You can have as many partitions as you want .
+*************************************** You can have as many partitions as you want .

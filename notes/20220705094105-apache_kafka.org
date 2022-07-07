@@ -14,3 +14,7 @@
 [[id:A5C1E4EF-3A86-4C0B-9E17-E97E0B7C0995][Kafka Producers]]
 
 [[id:7FC25C75-CC15-4E14-A09D-922D684F8F95][Kafka Message Serializers]]
+
+[[id:628F75BC-8AAA-436E-A17D-5DD612DE0A00][Kafka Consumers]]
+
+[[id:9F99A293-7C2D-4D34-A877-08988704CBB4][Kafka Consumer Groups andf Offsets]]

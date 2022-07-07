@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       9F99A293-7C2D-4D34-A877-08988704CBB4
+:END:
+#+TITLE: Kafka Consumer Groups andf Offsets
+
+
+********************************************** All consumers in a an application read data as consumers groups..
+
+********************************************** But what if there are too many consumers ?
+
+*********************************************** If you have more consumers than partition then some consumers will be inactive
+
+******************************** Multiple consumers in 1 topic
+
+********************************************** In kafkaa it is acceptable tio have multiple consumer groups on same topic
+
+********************************************** To create distinct consumer groups use consumer property  group.id.

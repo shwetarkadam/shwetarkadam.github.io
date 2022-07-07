@@ -3,21 +3,21 @@
 :END:
 #+TITLE:  Kafka Producers
 
-*************** Producers write data to topics (which they are part of )
+******************************** Producers write data to topics (which they are part of )
 
-*************** Producers already know to which partition to writwe to and which kafka broker has it
+******************************** Producers already know to which partition to writwe to and which kafka broker has it
 
-*************** In case of key broker failures ,Producers will automatically recover
+******************************** In case of key broker failures ,Producers will automatically recover
 
-********** Producers Message Keys
+*************************** Producers Message Keys
 
-***************** Producers can choose to send a key with the message.(string ,binary,etc)
+********************************** Producers can choose to send a key with the message.(string ,binary,etc)
 
-***************** If key== NULL, data is sent round robin(partition 0,1,2)
+********************************** If key== NULL, data is sent round robin(partition 0,1,2)
 
-***************** If key != NULL , then all messages for that key will go into the same partition.(hashing)
+********************************** If key != NULL , then all messages for that key will go into the same partition.(hashing)
 
-***************** A key is typically sent if you need message ordering for a specific field (eg : truck_id)
+********************************** A key is typically sent if you need message ordering for a specific field (eg : truck_id)
 #+begin_src
 
                           Topic A/Parttion 0
