@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>BinarySearch – Shweta's Braindump</title>
+<head><title>Kafka Consumer Groups andf Offsets – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -24,22 +23,36 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>BinarySearch</h1>
+<h1 class=collapsed-title>Kafka Consumer Groups andf Offsets</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220511201649-binarysearch/ alt=BinarySearch class=permalink><h1>BinarySearch</h1></a>
-<h2 id=idenitification>Idenitification</h2>
+<a href=https://notes.codeklutz.com/notes/20220707101731-kafka_consumer_groups_andf_offsets/ alt="Kafka Consumer Groups andf Offsets" class=permalink><h1>Kafka Consumer Groups andf Offsets</h1></a>
+<ul>
+<li>All consumers in a an application read data as consumers groups..</li>
+</ul>
 <ul>
 <li>
-<p>If the array given is SORTED,then always go for Binary Search approach.</p>
-</li>
-<li>
-<p>Mid can be calculated as:</p>
+<p>But what if there are too many consumers ?</p>
+<ul>
+<li>If you have more consumers than partition then some consumers will be inactive</li>
+</ul>
 </li>
 </ul>
-<pre tabindex=0><code class=language-nil data-lang=nil>
-mid= start + (end-start)/2
-</code></pre><p>Instead of start+end /2 to avoid Integer overflow (testcases have these)</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220511201649-binarysearch.org>Edit this page on GitHub</a></small>
+<h2 id=multiple-consumers-in-1-topic>Multiple consumers in 1 topic</h2>
+<ul>
+<li>In kafkaa it is acceptable tio have multiple consumer groups on same topic</li>
+</ul>
+<ul>
+<li>To create distinct consumer groups use consumer property group.id.</li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220707101731-kafka_consumer_groups_andf_offsets.org>Edit this page on GitHub</a></small>
+</div>
+<div class=bl-section>
+<h4>Links to this note</h4>
+<div class=backlinks>
+<ul>
+<li><a href=/notes/20220705094105-apache_kafka/>Apache Kafka</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
