@@ -14,3 +14,12 @@
  mid= start + (end-start)/2
 #+end_src
 Instead of start+end /2 to avoid Integer overflow (testcases have these)
+
+- For types of problems involving rotated sorted array or find element in such a rotated sorted array ,thumb rule to remember
+
+ #+begin_src
+
+   No of rotations = index of minimum element
+ #+end_src
+
+ And once you get the min element and its index u can use that as starting mid and apply binarySearch from there.
