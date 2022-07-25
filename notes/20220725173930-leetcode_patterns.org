@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       ADE68492-9F19-46B0-8F2C-9B17F021913F
+:END:
+#+TITLE:  LeetCode Patterns
+
+****************** If the Input array is sorted then:
+******************** Binary Search
+******************** 2 Pointers
+
+
+****************** If asked for all Permutations and subsets then:
+******************** Backtracking
+
+****************** If given a Tree/ Graph then :
+******************** DFS
+******************** BFS
+
+
+****************** If given a linked list then :
+******************** 2 Pointers
+
+****************** If recursion is banned then :
+******************** Stack
+
+
+****************** If must solve in-place then:
+******************** Swap coressponding values
+******************** Store One or more diffirent values in same pointer.
+
+
+****************** If asked for maximum/minimum subarray/subset/options then:
+******************** Dynamic Programming
+
+
+****************** If asked for top/least K items then:
+******************** Heap
+
+
+****************** If asked for common strings then
+******************** Map
+******************** Trie
+****************** ELse
+******************** Map/Set for O(1) time and O(n) space
+******************** Sort Input for o(nlogn) time and O(1) space
