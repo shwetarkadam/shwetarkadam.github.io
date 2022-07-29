@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>SSL – Shweta's Braindump</title>
+<head><title>LeetCode Patterns – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -24,47 +23,35 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>SSL</h1>
+<h1 class=collapsed-title>LeetCode Patterns</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220621191231-ssl/ alt=SSL class=permalink><h1>SSL</h1></a>
-<p>Commands to debug issues related to ssl</p>
-<ul>
-<li>Check if website cert has expired:</li>
-</ul>
-<pre tabindex=0><code class=language-nil data-lang=nil>
-```  openssl s_client -showcerts -connect google.com:443 2&gt; /dev/null |   openssl x509 -noout -dates```
-
-notBefore=Aug 19 08:07:15 2020 GMT
-notAfter=Aug 24 23:59:59 2021 GMT
-
-
- | openssl x509 -noout -issuer -dates -subject -serial
-
-</code></pre><ul>
-<li>Print certs from cacerts or any file using keytool command
-<pre tabindex=0><code class=language-nil data-lang=nil>keytool -v -keystore YOUR_PC/jdk/Contents/Home/jre/lib/security/cacerts -list
-
-</code></pre></li>
-</ul>
-<ul>
-<li>Convert certificate into appropriate format
-<a href=https://knowledge.digicert.com/solution/SO26449.html target=_blank>
-https://knowledge.digicert.com/solution/SO26449.html<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</li>
-</ul>
-<ul>
-<li>Command to get private key and cert from p12 file</li>
-</ul>
-<pre tabindex=0><code class=language-nil data-lang=nil>  for client cert it will be
-openssl pkcs12 -in your_p12_file.p12 -out client.pem -clcerts -nokeys
-
-
-
-for private key it will be
-openssl pkcs12 -in your_p12_file.p12 -out key.pem -nocerts
-</code></pre>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220621191231-ssl.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20220725173930-leetcode_patterns/ alt="LeetCode Patterns" class=permalink><h1>LeetCode Patterns</h1></a>
+<h2 id=if-the-input-array-is-sorted-then>If the Input array is sorted then:</h2>
+<h4 id=binary-search>Binary Search</h4>
+<h4 id=2-pointers>2 Pointers</h4>
+<h2 id=if-asked-for-all-permutations-and-subsets-then>If asked for all Permutations and subsets then:</h2>
+<h4 id=backtracking>Backtracking</h4>
+<h2 id=if-given-a-tree-graph-then>If given a Tree/ Graph then :</h2>
+<h4 id=dfs>DFS</h4>
+<h4 id=bfs>BFS</h4>
+<h2 id=if-given-a-linked-list-then>If given a linked list then :</h2>
+<h4 id=2-pointers>2 Pointers</h4>
+<h2 id=if-recursion-is-banned-then>If recursion is banned then :</h2>
+<h4 id=stack>Stack</h4>
+<h2 id=if-must-solve-in-place-then>If must solve in-place then:</h2>
+<h4 id=swap-coressponding-values>Swap coressponding values</h4>
+<h4 id=store-one-or-more-diffirent-values-in-same-pointer-dot>Store One or more diffirent values in same pointer.</h4>
+<h2 id=if-asked-for-maximum-minimum-subarray-subset-options-then>If asked for maximum/minimum subarray/subset/options then:</h2>
+<h4 id=dynamic-programming>Dynamic Programming</h4>
+<h2 id=if-asked-for-top-least-k-items-then>If asked for top/least K items then:</h2>
+<h4 id=heap>Heap</h4>
+<h2 id=if-asked-for-common-strings-then>If asked for common strings then</h2>
+<h4 id=map>Map</h4>
+<h4 id=trie>Trie</h4>
+<h2 id=else>ELse</h2>
+<h4 id=map-set-for-o--1--time-and-o--n--space>Map/Set for O(1) time and O(n) space</h4>
+<h4 id=sort-input-for-o--nlogn--time-and-o--1--space>Sort Input for o(nlogn) time and O(1) space</h4>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220725173930-leetcode_patterns.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
