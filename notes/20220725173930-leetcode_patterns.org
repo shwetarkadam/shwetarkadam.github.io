@@ -36,9 +36,9 @@
 ******************** Heap
 
 
-****************** If asked for common strings then
-******************** Map
-******************** Trie
-****************** ELse
-******************** Map/Set for O(1) time and O(n) space
-******************** Sort Input for o(nlogn) time and O(1) space
+************************** If asked for common strings then
+**************************** Map
+**************************** Trie
+************************** ELse
+**************************** Map/Set for O(1) time and O(n) space
+**************************** Sort Input for o(nlogn) time and O(1) space
