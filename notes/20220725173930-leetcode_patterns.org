@@ -3,6 +3,36 @@
 :END:
 #+TITLE:  LeetCode Patterns
 
+|---------------------------------------------------+-----------------------------------------------------|
+| If                                                | USE                                                 |
+|---------------------------------------------------+-----------------------------------------------------|
+| Input array is sorted                             | Binary Search                                       |
+|                                                   | 2 Pointers                                          |
+|                                                   |                                                     |
+| all Permutations and subsets are asked            | Backtracking                                        |
+|                                                   |                                                     |
+| given a Tree/ Graph                               | DFS ,BFS                                            |
+|                                                   |                                                     |
+| given a linked list                               | 2 Pointers                                          |
+|                                                   |                                                     |
+| recursion is banned                               | Stack                                               |
+|                                                   |                                                     |
+| Must solve in-place                               | Swap coressponding values                           |
+|                                                   | Store One or more diffirent values in same pointer. |
+|                                                   |                                                     |
+| asked for maximum/minimum subarray/subset/options | Dynamic Programming                                 |
+|                                                   |                                                     |
+| asked for top/least K items                       | Heap                                                |
+|                                                   |                                                     |
+| asked for common strings                          | Map ,Trie                                           |
+|                                                   | Else                                                |
+|                                                   | Map/Set for o(1) time and o(n) space                |
+|                                                   | Sort input for O(nlogn) time o(1) space             |
+|---------------------------------------------------+-----------------------------------------------------|
+
+
+
+
 ****************** If the Input array is sorted then:
 ******************** Binary Search
 ******************** 2 Pointers

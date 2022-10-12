@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3CCE16D2-B597-45DC-9E04-9AD2A20FDC78
+:END:
+#+title: Interesting Blogs
+
+- Julia Evans https://wizardzines.com/comics/
+- https://lokesh1729.com/posts/resources-for-cracking-data-structures-algorithms-interview
