@@ -4,4 +4,6 @@
 #+title: Interesting Blogs
 
 - Julia Evans https://wizardzines.com/comics/
+- Lara Hogan  https://larahogan.me/resources/one-on-ones/
+
 - https://lokesh1729.com/posts/resources-for-cracking-data-structures-algorithms-interview
