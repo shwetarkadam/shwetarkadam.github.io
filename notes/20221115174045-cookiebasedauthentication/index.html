@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Grind75 Leetcode ProblemSet – Shweta's Braindump</title>
+<head><title>Cookie Based Authentication – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -25,21 +26,30 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Grind75 Leetcode ProblemSet</h1>
+<h1 class=collapsed-title>Cookie Based Authentication</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220520194919-grind75leetcodeproblemset/ alt="Grind75 Leetcode ProblemSet" class=permalink><h1>Grind75 Leetcode ProblemSet</h1></a>
-<p><a href=https://www.techinterviewhandbook.org/grind75 target=_blank>
-https://www.techinterviewhandbook.org/grind75<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</p>
-<p><a href=https://www.techinterviewhandbook.org/software-engineering-interview-guide/ target=_blank>
-https://www.techinterviewhandbook.org/software-engineering-interview-guide/<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-<a href=https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions target=_blank>
-https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220520194919-grind75leetcodeproblemset.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20221115174045-cookiebasedauthentication/ alt="Cookie Based Authentication" class=permalink><h1>Cookie Based Authentication</h1></a>
+<p>Also called Session Based Authentication.</p>
+<p>Http Protocol is stateless so every time a user logins with username and password , the server doesnt keep track of the login credentials .
+So Next time the same user logins , the server has to authenticate the user again. With private data or apis ,this repeated process gets annoying hence we can use Cookie/Session based authentication where we basically make the HTTP protocol stateful.</p>
+<p>THis makes HTTP stateful since client and server both have some sort of session or record of that particular user. Its the server&rsquo;s responsibility to ensure the number of activer user sessions in some database or memory. THe client sends the cookie everytime it makes a request to the server.</p>
+<pre tabindex=0><code class=language-nil data-lang=nil>Client -&gt; Sends Username Password -&gt; Server
+Client &lt;- Server authenticates the credentials and returns a token (Set-cookie header) + Server also stores this token in its database or memory
+Client stores the token  -&gt; and sends the token to server each time while making a request
+Client &lt;- Server authenticates that token and returns the requested data to client
+
+</code></pre><h2 id=cons>Cons:</h2>
+<h3 id=increased-overhead-as-users-increase-so-will-the-number-of-tokens-on-server-side-and-hence-server-overhead-increases-dot>Increased Overhead : As users increase , so will the number of tokens on server side and hence server overhead increases.</h3>
+<h3 id=scalability-overhead-as-your-server-instances-will-increase-you-will-need-to-store-the-session-cookies-in-all-instances-of-servers-which-will-cause-scalabilirt-issues-dot-but-this-can-be-mananged-by-having-a-dedicated-server-only-mananging-session-data-or-loadbalancer-could-support-sticky-sessions>Scalability Overhead: As your server instances will increase , you will need to store the session/cookies in all instances of servers which will cause scalabilirt issues . But this can be mananged by having a dedicated server only mananging session data or loadbalancer could support sticky sessions</h3>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20221115174045-cookiebasedauthentication.org>Edit this page on GitHub</a></small>
+</div>
+<div class=bl-section>
+<h4>Links to this note</h4>
+<div class=backlinks>
+<ul>
+<li><a href=/notes/20221115173358-authentication/>Authentication</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>

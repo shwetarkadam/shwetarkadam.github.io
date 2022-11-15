@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>Grind75 Leetcode ProblemSet – Shweta's Braindump</title>
+<head><title>Token Based Authentication – Shweta's Braindump</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -25,21 +25,26 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Grind75 Leetcode ProblemSet</h1>
+<h1 class=collapsed-title>Token Based Authentication</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220520194919-grind75leetcodeproblemset/ alt="Grind75 Leetcode ProblemSet" class=permalink><h1>Grind75 Leetcode ProblemSet</h1></a>
-<p><a href=https://www.techinterviewhandbook.org/grind75 target=_blank>
-https://www.techinterviewhandbook.org/grind75<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</p>
-<p><a href=https://www.techinterviewhandbook.org/software-engineering-interview-guide/ target=_blank>
-https://www.techinterviewhandbook.org/software-engineering-interview-guide/<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-<a href=https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions target=_blank>
-https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link-icon"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</p>
-<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20220520194919-grind75leetcodeproblemset.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20221115180723-tokenbasedauthentication/ alt="Token Based Authentication" class=permalink><h1>Token Based Authentication</h1></a>
+<p>Token Based authentication allows users to verify their identity using credntials and in this case server returns a unique access token (mostly in Bearer token header ) or signed token such as JWT. As long as the token is valid ,user can access the web page or api. The token is stored on client side</p>
+<p>Client -> Sends login creds -> Server
+Client &lt;- Server authenticates and returns a signed token(JWT or Bearer )
+CLient stores the token in local storage/ cookie
+Client makes requests to server and makes sure this token is added in Bearer header or as POST request parameter
+CLient -> Server decodes the token or jwt and if token valid sends the requested data
+Once user logs out token is destroyed or a validity period can be set for the token</p>
+<p>Tokens are like a time stamped tickets. As long as token is valid ,user is allowed to perform operations</p>
+<small><a href=https://github.com/shwetarkadam/braindump/edit/master/notes/20221115180723-tokenbasedauthentication.org>Edit this page on GitHub</a></small>
+</div>
+<div class=bl-section>
+<h4>Links to this note</h4>
+<div class=backlinks>
+<ul>
+<li><a href=/notes/20221115173358-authentication/>Authentication</a></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
