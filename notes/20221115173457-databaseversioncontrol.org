@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8E058E5A-B4B7-43EC-9705-C22ED05C1E81
+:END:
+#+title: DatabaseVersionControl
+
+Refer https://www.codeklutz.com/database%20version%20control/database%20schema%20changes/Today-I-Learnt-Database-Version-Control/

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       121BD108-7B50-4E6B-B877-644BCB46F209
+:END:
+#+title: Cookie Based Authentication
+
+Also called Session Based Authentication.
+
+Http Protocol is stateless so every time a user logins with username and password , the server doesnt keep track of the login credentials .
+So Next time the same user logins , the server has to authenticate the user again. With private data or apis ,this repeated process gets annoying hence  we can use Cookie/Session based authentication where we basically make the HTTP protocol stateful.
+
+THis makes HTTP stateful since client and server both have some sort of session or record of that particular user. Its the server's responsibility to ensure the number of activer user sessions in some database or memory. THe client sends the cookie everytime it makes a request to the server.
+
+#+begin_src
+Client -> Sends Username Password -> Server
+Client <- Server authenticates the credentials and returns a token (Set-cookie header) + Server also stores this token in its database or memory
+Client stores the token  -> and sends the token to server each time while making a request
+Client <- Server authenticates that token and returns the requested data to client
+
+#+end_src
+
+**  Cons:
+*** Increased Overhead : As users increase , so will the number of tokens on server side and hence server overhead increases.
+*** Scalability Overhead: As your server instances will increase , you will need to store the session/cookies in all instances of servers which will cause scalabilirt issues . But this can be mananged by having a dedicated server only mananging session data or loadbalancer could support sticky sessions

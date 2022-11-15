@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       86A56066-7D14-42A0-A57F-7FDB3C886F88
+:END:
+#+title: OAuth
+
+OAuth is used for authorization  -> Specifically Authorization of services .Its an open standard
+It allows third party services to use user's
+
+
+OAuth 1.0 -> most widely used is OAuth2.0
+
+
+Oauth access token contains all the allowed persmission
+Trusted (cannot be tampered)

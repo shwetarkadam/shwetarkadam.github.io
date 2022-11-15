@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       E38A8402-BE8A-4D01-BB6C-5D5F68EC4A7C
+:END:
+#+title: Authentication
+
+Authentication is the process identify the identity of the user.
+[[id:121BD108-7B50-4E6B-B877-644BCB46F209][Cookie Based Authentication]]
+
+[[id:8302D73D-0398-469E-95C3-66D37E8D9DA5][Token Based Authentication]]
+
+[[id:86A56066-7D14-42A0-A57F-7FDB3C886F88][OAuth]]
