@@ -6,7 +6,7 @@
 Conversions of various data structures using Streams
 
 ************** - int []array -> Integer ArrayList
-  #+begin_src
+  #+begin_src ini
    List<Integer> l=Arrays.stream(nums).boxed().toList();
   #+end_src
 This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array's length cannot be change the lengthof this list cannot be changed too.
