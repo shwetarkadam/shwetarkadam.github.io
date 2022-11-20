@@ -5,11 +5,11 @@ name = "Cortex"
 license = "MIT"
 licenselink = "https://github.com/ayrat555/cortex-dark/blob/master/LICENSE"
 description = "Theme for my braindump."
-homepage = "https://braindump.badykov.com/"
+homepage = "https://notes.codeklutz.com/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = "Airat Badykov"
-  homepage = "https://www.badykov.com/"
+  name = "Shweta Kadam"
+  homepage = "https://codeklutz.com/"
