@@ -31,18 +31,18 @@
 <a href=https://notes.codeklutz.com/notes/20220507070445-iterators/ alt=Iterators class=permalink><h1>Iterators</h1></a>
 <p>External to Internal Iterators.
 Given</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10)
-</code></pre><p>External Iterators</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>for (int i = 0; i &lt; numbers.size();  i++){
-	 System.out.println(numbers.get(i));
-}
-</code></pre><p>Internal Iterators</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach((Integer E) -&gt; System.out.println(e));
-</code></pre><p>or even type inference in Java</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach((e) -&gt; System.out.println(e));
-</code></pre><p>or method reference</p>
-<pre tabindex=0><code class=language-nil data-lang=nil>numbers.forEach(System.out::println);
-</code></pre>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>List&lt;Integer&gt; numbers</span> <span style=color:#ff79c6>=</span> <span style=color:#f1fa8c>Arrays.asList(1,2,3,4,5,6,7,8,9,10)</span>
+</code></pre></div><p>External Iterators</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>for (int i</span> <span style=color:#ff79c6>=</span> <span style=color:#f1fa8c>0; i &lt; numbers.size();  i++){
+</span><span style=color:#f1fa8c>	 System.out.println(numbers.get(i));</span>
+<span style=color:#50fa7b>}</span>
+</code></pre></div><p>Internal Iterators</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>numbers.forEach((Integer E) -&gt; System.out.println(e));</span>
+</code></pre></div><p>or even type inference in Java</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>numbers.forEach((e) -&gt; System.out.println(e));</span>
+</code></pre></div><p>or method reference</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>numbers.forEach(System.out::println);</span>
+</code></pre></div>
 <small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20220507070445-iterators.org>Edit this page on GitHub</a></small>
 </div>
 <div class=bl-section>
