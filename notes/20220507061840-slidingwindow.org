@@ -9,7 +9,7 @@ Aditya Verma Approach to sliding window :
 2. There is a window which is *continous* (doesnt break) .
 3. Question might ask related to *subarray or substring* .Also it can ask largest or smallest value in the question.
 4. Window size will be given or the question might ask to find out window size.
-#+begin_src
+#+begin_src ini
 Window Size | Condition
 #+end_src
 
