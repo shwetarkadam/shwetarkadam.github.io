@@ -31,8 +31,8 @@
 <a href=https://notes.codeklutz.com/notes/20220508090903-conversionsusingjavastreams/ alt="Conversions Using Java Streams" class=permalink><h1>Conversions Using Java Streams</h1></a>
 <p>Conversions of various data structures using Streams</p>
 <h2 id=int-array-integer-arraylist>- int []array -> Integer ArrayList</h2>
-<pre tabindex=0><code class=language-nil data-lang=nil>List&lt;Integer&gt; l=Arrays.stream(nums).boxed().toList();
-</code></pre><p>This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array&rsquo;s length cannot be change the lengthof this list cannot be changed too.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>List&lt;Integer&gt; l</span><span style=color:#ff79c6>=</span><span style=color:#f1fa8c>Arrays.stream(nums).boxed().toList();</span>
+</code></pre></div><p>This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array&rsquo;s length cannot be change the lengthof this list cannot be changed too.
 Hence methods like remove() will give Unsupported Operation exception</p>
 <ul>
 <li>To solve this,just create a &ldquo;real&rdquo; new list</li>
