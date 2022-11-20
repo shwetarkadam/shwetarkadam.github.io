@@ -4,7 +4,7 @@
 #+title: Iterators
 External to Internal Iterators.
 Given
-#+begin_src
+#+begin_src ini
 List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10)
 #+end_src
 
@@ -17,16 +17,16 @@ for (int i = 0; i < numbers.size();  i++){
 
 
 Internal Iterators
-#+begin_src
+#+begin_src ini
   numbers.forEach((Integer E) -> System.out.println(e));
 #+end_src
 
 or even type inference in Java
-#+begin_src
+#+begin_src ini
 numbers.forEach((e) -> System.out.println(e));
 #+end_src
 
 or method reference
-#+begin_src
+#+begin_src ini
 numbers.forEach(System.out::println);
 #+end_src
