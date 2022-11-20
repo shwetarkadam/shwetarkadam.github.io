@@ -4,11 +4,11 @@
 #+title: LazyEvaluation
 
 Given
-#+begin_src
+#+begin_src ini
 List<Integer> numbers = Arrays.asList(1,2,3);
 #+end_src
 We have a lambda that relies on the external array factor
-#+begin_src
+#+begin_src ini
 int[] factor = new int[] { 2 };
 Steam<Integer> strm = numbers.stream().map(e -> e * factor[0]);
 

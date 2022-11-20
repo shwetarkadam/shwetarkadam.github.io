@@ -5,7 +5,7 @@
 
 My daily needed bindings for doom emacs.
 - Open/Close Treemacs tree :
-#+begin_src
+#+begin_src ini
 SPC o p
 #+end_src
 
@@ -13,13 +13,13 @@ SPC o p
 - Fuzzy search using IVY :
 
   - Go to the project location and for fuzzy find files
-   #+begin_src
+   #+begin_src ini
       SPC SPC
    #+end_src
 
 
   - Jump file to project
-  #+begin_src
+  #+begin_src ini
 SPC pf    OR     SPC SPC
 #+end_src
 

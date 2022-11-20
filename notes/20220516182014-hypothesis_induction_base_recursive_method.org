@@ -11,7 +11,7 @@ GOAL here is to *make input SMALLER*
 
 - Hypothesis:
   In this, assume a function with its neceesary input and what we expect in that output.
- #+begin_src
+ #+begin_src ini
   solveHeightOfBinaryTree(Node root )-> 3
 
   solveHeightOfBinaryTree(Node subnodeAtLevel2) -> 2

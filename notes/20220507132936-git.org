@@ -5,7 +5,7 @@
 
 ******* Update local feature from master branch
 
-#+begin_src
+#+begin_src ini
 git checkout the_branch_you_want_to_update
 
 git merge origin/master
@@ -14,12 +14,12 @@ git merge origin/master
 #+end_src
 
 ******* For same changes to reflect in remote branch
-#+begin_src
+#+begin_src ini
   git push origin  the_branch_you_want_to_update  //to update the remote feature branch
 #+end_src
 
 ******* To see the list of commits that are causing conflict
-#+begin_src
+#+begin_src ini
 git log --merge
 #+end_src
 

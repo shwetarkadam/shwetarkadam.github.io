@@ -13,12 +13,12 @@ This code will create a unmodifiable list as Arrays.toList creates a wrapper lis
 Hence methods like remove() will give Unsupported Operation exception
 
   - To solve this,just create a "real" new list
-#+begin_src
+#+begin_src ini
   List<Integer> l=new ArrayList(Arrays.stream(nums).boxed().toList());
 #+end_src
 
 ************** - Integer ArrayList -> int []array
-  #+begin_src
+  #+begin_src ini
 int[] example1 = list.stream().mapToInt(i->i).toArray();
 // OR
 int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
@@ -26,7 +26,7 @@ int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
 
 
 ************** Fetching particular key from Hashmap based on value
-#+begin_src
+#+begin_src ini
   final Integer r1=r;
                Integer t=map.entrySet().stream()
   .filter(e -> e.getValue().equals(r1))

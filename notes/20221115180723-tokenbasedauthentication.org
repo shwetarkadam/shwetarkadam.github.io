@@ -6,6 +6,7 @@
 
 Token Based authentication allows users to verify their identity using credntials and in this case server returns a unique access token (mostly in Bearer token  header ) or signed token such as JWT. As long as the token is valid ,user can access the web page or api. The token is stored on client side
 
+#+begin_src ini
 
 Client -> Sends login creds -> Server
 Client <- Server authenticates and returns a signed token(JWT or Bearer )
@@ -13,5 +14,6 @@ CLient stores the token in local storage/ cookie
 Client makes requests to server and makes sure this token is added in Bearer header or as POST request parameter
 CLient -> Server decodes the token or jwt and if token valid sends the requested data
 Once user logs out token is destroyed or a validity period can be set for the token
+#+end_src
 
 Tokens are like a time stamped tickets. As long as token is valid ,user is allowed to perform operations

@@ -9,7 +9,7 @@
 - If the array given is SORTED,then always go for Binary Search approach.
 
 - Mid can be calculated as:
-#+begin_src
+#+begin_src ini
 
  mid= start + (end-start)/2
 #+end_src
@@ -17,7 +17,7 @@ Instead of start+end /2 to avoid Integer overflow (testcases have these)
 
 - For types of problems involving rotated sorted array or find element in such a rotated sorted array ,thumb rule to remember
 
- #+begin_src
+ #+begin_src ini
 
    No of rotations = index of minimum element
  #+end_src

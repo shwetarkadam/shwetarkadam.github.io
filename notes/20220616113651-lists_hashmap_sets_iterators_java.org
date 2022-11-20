@@ -8,11 +8,11 @@
 
 Case where you know you will have only single element in list after your processing and wish to return the element and
 you dont know what is the actual class
-#+begin_java
+#+begin_src ini
 
 Element ele= set.iterator().next();
 
 OR
 
 return set.iterator().next();
-#+end_java
+#+end_src

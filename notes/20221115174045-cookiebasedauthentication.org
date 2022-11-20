@@ -10,7 +10,7 @@ So Next time the same user logins , the server has to authenticate the user agai
 
 THis makes HTTP stateful since client and server both have some sort of session or record of that particular user. Its the server's responsibility to ensure the number of activer user sessions in some database or memory. THe client sends the cookie everytime it makes a request to the server.
 
-#+begin_src
+#+begin_src ini
 Client -> Sends Username Password -> Server
 Client <- Server authenticates the credentials and returns a token (Set-cookie header) + Server also stores this token in its database or memory
 Client stores the token  -> and sends the token to server each time while making a request

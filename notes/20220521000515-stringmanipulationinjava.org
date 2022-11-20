@@ -4,12 +4,12 @@
 #+title: String Manipulation In Java
 
 ******************** Remove all SPACES from a string and concentate
- #+begin_src
+ #+begin_src ini
       s=s.replaceAll("\\s","");
  #+end_src
 
 ******************** Remove all PUNCTUATIONS from a string
 
-#+begin_src
+#+begin_src ini
  s=s.replaceAll("\\p{Punct}","");
 #+end_src
