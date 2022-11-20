@@ -6,19 +6,19 @@
 Conversions of various data structures using Streams
 
 ************** - int []array -> Integer ArrayList
-  #+begin_src ini
+  #+begin_src java
    List<Integer> l=Arrays.stream(nums).boxed().toList();
   #+end_src
 This code will create a unmodifiable list as Arrays.toList creates a wrapper list over the array.Exactly as array's length cannot be change the lengthof this list cannot be changed too.
 Hence methods like remove() will give Unsupported Operation exception
 
   - To solve this,just create a "real" new list
-#+begin_src ini
+#+begin_src java
   List<Integer> l=new ArrayList(Arrays.stream(nums).boxed().toList());
 #+end_src
 
 ************** - Integer ArrayList -> int []array
-  #+begin_src ini
+  #+begin_src java
 int[] example1 = list.stream().mapToInt(i->i).toArray();
 // OR
 int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
@@ -26,7 +26,7 @@ int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
 
 
 ************** Fetching particular key from Hashmap based on value
-#+begin_src ini
+#+begin_src java
   final Integer r1=r;
                Integer t=map.entrySet().stream()
   .filter(e -> e.getValue().equals(r1))
@@ -34,4 +34,4 @@ int[] example2 = list.stream().mapToInt(Integer::intValue).toArray();
   .findFirst()
   .orElse(null);
 #+end_src
-final is needed otherwise you will get error *Line 11: error: local variables referenced from a lambda expression must be final or effectively final .filter(e -> e.getValue().equals(r)) ^*
+final is needed otherwise you will get error *Line 11: error: local variables referenced from a lambda expression must be final or effectively final .filter(e -> e.getValue().equals(r))
