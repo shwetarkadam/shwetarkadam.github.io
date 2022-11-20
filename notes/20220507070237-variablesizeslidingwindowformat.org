@@ -5,7 +5,7 @@
 ***** General Format of Variable Size Sliding Window by Aditya Verma
 
 
-#+begin_src
+#+begin_src ini
 
 while(j<size)
 {
