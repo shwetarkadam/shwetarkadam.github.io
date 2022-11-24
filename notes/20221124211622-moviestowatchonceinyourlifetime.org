@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       BBDFE565-8FD3-47EC-BD8A-9B3B6B9DC119
+:END:
+#+title: MoviesToWatchOnceInYourLifeTime
+
+A curated list of movies which I find are best in the world.Thanks to [[https://blog.bhanunadar.com/][Bhanu Nadar]] for the list.
+1. 12 angry men
+2. The schindlers list
+3. Forrest gump
+4. Life is beautiful
+5. Saving private ryan
+6. The green mile
+7. The usual suspects
+8. The pianist
+9. Whiplash
+10. The prestige
+11. Memento
+12. American beauty
+13. Good will hunting
+14. Eternal sunshine of spotless mind
+15. Green book
+16. Inside out
+17. The truman show
+18. Hacksaw ridge
+19.Catch me if you can
+20. About time
+21. Predestination
+22. Dead poet society
+23. The Imitation game
