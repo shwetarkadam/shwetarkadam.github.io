@@ -14,5 +14,5 @@ You can search for particular topic or start hopping around by going to the [ful
 
 Alternatively,here is a small selection of entrypoints:
 
- [[/notes/20220507132936-git.org][Git]]
+ [Git](/notes/20220507132936-git.org)
 Have fun!
