@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       B102B011-9034-48BA-AE0F-213265B975C7
+:END:
+#+title: Vault
+
+
+
+HashiCorp Vault is a tool for managing, storing, and securing access to secrets, such as encryption keys, credentials, certificates, and tokens
+
+Vault provides a single source of truth for all secrets. Vault assumes that all traffic is untrusted until the identity of client is verified.

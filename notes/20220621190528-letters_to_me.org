@@ -6,7 +6,7 @@
 Migrating https://letters.codeklutz.com/ to this braindump to make myself easier to fetch and process.
 
 
-
+******************** Web extension which gives synonyms of a particular word
 
 
 

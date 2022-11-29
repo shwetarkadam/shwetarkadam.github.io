@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0594C6BD-3BAD-4B8E-8A3C-68C0C08507C2
+:END:
+#+title: Comment Code Section In Vim
+For Commenting code in [[id:1147975C-A454-494D-8371-E956FABBBE95][Vim]]
+
+- First, go to the first line you want to comment, press Ctrl V. This will put the editor in the VISUAL BLOCK mode.
+- Then using the arrow key and select until the last line
+- Now press ShiftI, which will put the editor in INSERT mode and then press #. This will add a hash to the first line.
+-  Then press Esc (give it a second), and it will insert a # character on all other selected lines.

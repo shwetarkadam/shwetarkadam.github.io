@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8E69F2A6-6EE6-4E44-853E-9006695A7827
+:END:
+#+title: LearnVim
+
+A beginner's guide to [[id:1147975C-A454-494D-8371-E956FABBBE95][Vim]] and shortcuts
+https://thevaluable.dev/vim-commands-beginner/
+
+https://catonmat.net/top-10-vim-shortcuts

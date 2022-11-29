@@ -26,7 +26,15 @@ SPC pf    OR     SPC SPC
 
 - To shift between themes temporarily : SPC h t
 
+- Quicky insert code snippet in doom emacs
+#+begin_src bash
+<s TAB
+#+end_src
 
+- Find a file in existing directory
+  #+begin_src bash
+SPC .
+  #+end_src
 
 
 Reference : https://docs.doomemacs.org/latest/modules/completion/ivy/

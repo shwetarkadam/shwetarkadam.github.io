@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1147975C-A454-494D-8371-E956FABBBE95
+:END:
+#+title: Vim
+Vim is a text editor. Vim stands for Vi iMproved.
+Vim consists of different modes.
+
+- Normal mode :: the default mode, used for editor commands
+- Visual mode :: can highlight areas of text and editor commands will run on that highlighted text
+- Insert mode :: similar to editing in most editors

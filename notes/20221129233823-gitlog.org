@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       65B4E9B3-5DD3-4744-85B5-D9D45C1AED06
+:END:
+#+title: git log
+
+git log is a command under [[id:766353dc-df81-4dab-8b38-f0d9c94baa44][Git]]
+- Normal git log
+#+begin_src bash
+git log
+
+#+end_src
+- 
+#+begin_src bash
+git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all
+#+end_src

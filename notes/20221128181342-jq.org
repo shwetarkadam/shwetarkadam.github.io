@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       72328804-E5D0-4492-8734-271D0DA1C3EE
+:END:
+#+title: jq
+jq is a lightweight and flexible command-line JSON processor. It is like sed for JSON data. It can be used to transform json data into more readableformat

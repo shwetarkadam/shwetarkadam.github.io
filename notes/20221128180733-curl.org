@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       5905A983-3C8E-45A3-97B0-BE7A9E200934
+:END:
+#+title: curl
+
+
+***** Pretty output of curl using [[id:72328804-E5D0-4492-8734-271D0DA1C3EE][jq]]
+
+#+begin_src bash
+  ❯ echo  '{"fullName": {"firstName": "Bruce","middleName": "Clark", "lastName": "Wayne" }}' | jq .
+{
+  "fullName": {
+    "firstName": "Bruce",
+    "middleName": "Clark",
+    "lastName": "Wayne"
+  }
+}
+#+end_src
+f

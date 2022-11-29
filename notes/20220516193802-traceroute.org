@@ -7,7 +7,7 @@ traceroute shows you what data travels from computer to the internet and what an
 
 - Can be used to solve connection refused errors where you need to find out ast what point or hop it started restrcition.
 
- #+begin_src sh
+ #+begin_src bash
 traceroute google.com
 
 traceroute ip_addr
