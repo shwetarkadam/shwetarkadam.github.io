@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       1272c96a-11b5-431f-9779-cb17fea48fd8
+:END:
+#+title: pbcopy
+
+pbcopy and pbpaste are command for Mac.
+pbcopy lets you copy the the output of the command into your clipboard.
+pbpaste lets you paste the output right into the terminal
+
+- When to use ?
+If you face a situation where you need to copy all the contents of the file without opening the file ,this is a great option but this is only exclusive for mac
+
+#+begin_src bash
+cat testfile.org | pbcopy
+
+pbpaste
+#+end_src

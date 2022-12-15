@@ -14,6 +14,6 @@ You can search for particular topic or start hopping around by going to the [ful
 
 Alternatively,here is a small selection of entrypoints:
 
-- [Git](/notes/20220507132936-git.org/)
+- [Git](/notes/20220507132936-git.md)
 
 Have fun!

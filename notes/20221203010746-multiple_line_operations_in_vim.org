@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0f0d311f-d6ec-4d1a-ae71-3f07facbb8b6
+:END:
+#+title: Multiple Line Operations In Vim
+
+* Copy Multiple Lines in [[id:1147975C-A454-494D-8371-E956FABBBE95][Vim]]
+3yy: To yank multiple lines in vim, type in the number of lines followed by yy.
+This command will copy (yank) 3 lines starting from your cursor position. y^: Copy everything from the start of the line to the cursor.
+
+* Shift cursor by n number of lines
+#+begin_src bash
+j --> down
+k --> up
+ j and k move down and up one line, so 10j and 10k move down and up ten lines. You can repeat any motion by putting a number before it.
+#+end_src
+
+* Findall a pattern in a file
+#+begin_src bash
+find in the current file:
+
+:g/<pattern>/
+#+end_src

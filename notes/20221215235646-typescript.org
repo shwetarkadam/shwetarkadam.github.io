@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       d374a48d-8e97-4bb6-b8b5-991791b34a25
+:END:
+#+title: Typescript
+
+Typescript is a super set of Javascript. It validates your Javascript ahead of time with static type checking.
+***** Why  typscript ?
+- Code is interpreted by the browser but if the code is broken then it gives runtime errors (usually when you right click and check for console.log errors in old websites)
+- Typescript prevents this by extending Javascript with types. Where an IDE like vscode provides feedback.
+- It behaves like a compiler.
+  #+begin_src typescript
+let appName : String   //explicit
+let appName ="string"  //implicit
+let appName=any="string" //loosely typed
+  #+end_src
