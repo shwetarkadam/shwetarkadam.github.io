@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Authentication – Shweta's Notes</title>
+<head><title>Multiple Line Operations In Vim – Shweta's Notes</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -25,23 +26,25 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Authentication</h1>
+<h1 class=collapsed-title>Multiple Line Operations In Vim</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20221115173358-authentication/ alt=Authentication class=permalink><h1>Authentication</h1></a>
-<p>Authentication is the process identify the identity of the user.
-<a href=/notes/20221115174045-cookiebasedauthentication/ target=_blank>
-Cookie Based Authentication
+<a href=https://notes.codeklutz.com/notes/20221203010746-multiple_line_operations_in_vim/ alt="Multiple Line Operations In Vim" class=permalink><h1>Multiple Line Operations In Vim</h1></a>
+<h2 id=copy-multiple-lines-in-vim--20221130001659-vim-dot-md>Copy Multiple Lines in <a href=/notes/20221130001659-vim/ target=_blank>
+Vim
 </a>
-</p>
-<p><a href=/notes/20221115180723-tokenbasedauthentication/ target=_blank>
-Token Based Authentication
-</a>
-</p>
-<p><a href=/notes/20221115182447-oauth/ target=_blank>
-OAuth
-</a>
-</p>
-<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20221115173358-authentication.org>Edit this page on GitHub</a></small>
+</h2>
+<p>3yy: To yank multiple lines in vim, type in the number of lines followed by yy.
+This command will copy (yank) 3 lines starting from your cursor position. y^: Copy everything from the start of the line to the cursor.</p>
+<h2 id=shift-cursor-by-n-number-of-lines>Shift cursor by n number of lines</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>j --&gt; down
+k --&gt; up
+ j and k move down and up one line, so 10j and 10k move down and up ten lines. You can repeat any motion by putting a number before it.
+</code></pre></div><h2 id=findall-a-pattern-in-a-file>Findall a pattern in a file</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>find in the current file:
+
+:g/&lt;pattern&gt;/
+</code></pre></div>
+<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20221203010746-multiple_line_operations_in_vim.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
