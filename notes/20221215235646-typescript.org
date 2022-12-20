@@ -2,7 +2,7 @@
 :ID:       d374a48d-8e97-4bb6-b8b5-991791b34a25
 :END:
 #+title: Typescript
-
+Typescript used in [[id:1365b428-b3a0-4e45-b0fd-00a1f2cdecd9][Web Development]]
 Typescript is a super set of Javascript. It validates your Javascript ahead of time with static type checking.
 ***** Why  typscript ?
 - Code is interpreted by the browser but if the code is broken then it gives runtime errors (usually when you right click and check for console.log errors in old websites)

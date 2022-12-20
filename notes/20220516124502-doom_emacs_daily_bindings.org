@@ -36,5 +36,8 @@ SPC pf    OR     SPC SPC
 SPC .
   #+end_src
 
-
+- Toggle narrowing buffers
+  #+begin_src bash
+SPC b -(minus sign )
+  #+end_src
 Reference : https://docs.doomemacs.org/latest/modules/completion/ivy/
