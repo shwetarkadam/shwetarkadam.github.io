@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       afebe104-5280-4ab6-8a91-2946c24973da
+:END:
+#+title: My Social Links
+
+My Blog : https://codeklutz.com/
+My Braindump : https://notes.codeklutz
+
+My Social Links :
+
+- [[https://github.com/shwetarkadam][Github]]
+- [[https://techhub.social/@tomoko][Mastodon]]
+- [[https://twitter.com/ShwetaRKadam][Twitter]]
+- [[https://www.linkedin.com/in/shweta-kadam-81404512a/][Linkedln]]
