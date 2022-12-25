@@ -14,6 +14,6 @@ You can search for particular topic or start hopping around by going to the [ful
 
 Alternatively,here is a small selection of entrypoints:
 
-- [Software Engineering](/notes/20221220193956-software_engineering.org/)
+- [Software Engineering](/notes/20221220193956-software_engineering/)
 
 Have fun!
