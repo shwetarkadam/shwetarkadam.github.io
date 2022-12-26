@@ -6,10 +6,10 @@ This is how you can remove all submodules in [[id:766353dc-df81-4dab-8b38-f0d9c9
 
 To remove a [[id:08487ec4-3d73-45fd-b05e-e8c41b45d316][Git Submodule]]  you need to:
 
-Delete the relevant section from the .gitmodules file.
-Stage the .gitmodules changes =git add .gitmodules=
-Delete the relevant section from =.git/config=
-Run =git rm --cached path_to_submodule= (no trailing slash).
-Run =rm -rf .git/modules/path_to_submodule=  (no trailing slash).
-Commit git commit -m "Removed submodule "
-Delete the now untracked submodule files =rm -rf path_to_submodule=
+- Delete the relevant section from the .gitmodules file.
+- Stage the .gitmodules changes =git add .gitmodules=
+- Delete the relevant section from =.git/config=
+- Run =git rm --cached path_to_submodule= (no trailing slash).
+- Run =rm -rf .git/modules/path_to_submodule=  (no trailing slash).
+- Commit git commit -m "Removed submodule "
+- Delete the now untracked submodule files =rm -rf path_to_submodule=
