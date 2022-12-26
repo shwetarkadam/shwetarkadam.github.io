@@ -3,6 +3,14 @@
 :END:
 #+title: LazyEvaluation
 
+#+begin_quote
+The Style of only evaluating what is needed. oro only evaluating a until that value is needed.
+#+end_quote
+
+Avoid repeated or strict evaluation.
+
+
+
 Given
 #+begin_src ini
 List<Integer> numbers = Arrays.asList(1,2,3);

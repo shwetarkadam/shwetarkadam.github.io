@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f35748dd-1361-4362-af98-cd6332a0fc92
+:END:
+#+title: Functional Composition
+In [[id:43143187-4752-4d66-bac7-7e1d80988cf9][Functional Programming Revised]] we compose using functions much like we compose using objects.
+
+We can do =Functional Composition= where we can compose function usinfg other functions. And as a result, we can build upon an abstraction of functionals to build into more complex functions easily.

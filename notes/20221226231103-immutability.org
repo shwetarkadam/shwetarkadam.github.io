@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c1f4d0d6-d39c-48a7-9fd0-c52d65d70cf4
+:END:
+#+title: Immutability
+
+Means unable to change  or whose value does not change.
+For example: In java string is said to be immutable

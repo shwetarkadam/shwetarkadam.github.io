@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       6f98b6f9-e556-4e6f-ba91-2bf60283e3f9
+:END:
+#+title: Higher Order Functions
+We are used to passing data to a function or object to a function.
+
+#+begin_quote
+A Higher order function takes a function as an argument or returns a function as a result.
+#+end_quote
+Example : map in [[id:53492fd6-71b6-4b9e-a7b6-c50365e79085][JavaScript]]
+
+#+begin_src javascript
+ const double = n n=> n*2;
+[1,2,3,4].map(double)
+
+        or
+
+# notice how map took function as an argument
+[1,2,3,4].map(function(n){
+return n*2;
+        })
+#+end_src

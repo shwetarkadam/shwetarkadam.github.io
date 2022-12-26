@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       53492fd6-71b6-4b9e-a7b6-c50365e79085
+:END:
+#+title: JavaScript
+Javascript is a dynamic, just in time compiled langguage . Used in [[id:1365b428-b3a0-4e45-b0fd-00a1f2cdecd9][Web Development]]

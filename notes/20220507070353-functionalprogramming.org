@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       ddef7764-a374-41ef-bcbe-1d65770be961
 :END:
-#+title: Functional Programming
+#+title: Functional Programming Old
 We have :
 1. Inhererent Complexiity: Complexiitystemming from domain
 2. Accidental complexity: Complexity we create while trying to deal with inehrent complexity.

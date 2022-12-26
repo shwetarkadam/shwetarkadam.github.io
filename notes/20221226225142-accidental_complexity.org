@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f64be61d-8342-4b40-b23b-4fc28893d98e
+:END:
+#+title: Accidental Complexity
+
+Challenges that developers unintentionally make for themselves as a result of trying to solve a problem.

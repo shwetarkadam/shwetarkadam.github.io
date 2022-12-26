@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       5b095c1c-b927-499a-9a93-3df62c170dcb
+:END:
+#+title: Programming Styles
+
+- **Imperative Style**
+- - We tell the code =What to do= and =How to do it=
+- **Declarative Style**
+- - We tell the code =What to do= and NOT focus on =how to do it= . For example :using a library to tell what to do .
+- **Functional Style**
+- - It is kind of declarative style of programming.
+- - All functional Style is declarative but not all declarative style is functional

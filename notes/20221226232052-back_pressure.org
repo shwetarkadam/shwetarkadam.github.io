@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       49a0c4cd-d842-4fdb-8c71-e4fc80406ede
+:END:
+#+title: Back Pressure
+If the source is sending data faster than I can handle. What can I do?
+-> Why not buffer the data to be picked and processed later on

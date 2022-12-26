@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       65e7d965-e60c-4a18-a61b-80b748f956b5
+:END:
+#+title: Declarative Style Programming
+
+- **Declarative Style**
+ We tell the code =What to do= and NOT focus on =how to do it= . For example :using a library to tell what to do .
