@@ -5,8 +5,63 @@
 
 - **Imperative Style**
  -- We tell the code =What to do= and =How to do it=
+ #+begin_src java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+// The main method must be in a class named "Main".
+class Main {
+    public static void main(String[] args) {
+   for(int i=1;i<8;i++){
+       System.out.printf("isPrime(%d)? %b\n",i,isPrime(i));
+   }
+    }
+    public static boolean isPrime(int number){
+        boolean divisible=false;
+   for(int i=2;i<number ;i++){
+       if(number%i ==0){
+           divisible=true;
+           break;
+       }
+   }
+   return number>1 && !divisible;
+    }
+}
+
+    OUTPUT:
+isPrime(1)? false
+isPrime(2)? true
+isPrime(3)? true
+isPrime(4)? false
+isPrime(5)? true
+isPrime(6)? false
+isPrime(7)? true
+ #+end_src
 - **Declarative Style**
  -- We tell the code =What to do= and NOT focus on =how to do it= . For example :using a library to tell what to do .
 - **Functional Style**
  -- It is kind of declarative style of programming.
  -- All functional Style is declarative but not all declarative style is functional
+#+begin_src java
+class Main {
+    public static void main(String[] args) {
+   for(int i=1;i<8;i++){
+       System.out.printf("isPrime(%d)? %b\n",i,isPrime(i));
+   }
+
+   IntStream.range(1,8)
+   .forEach(i->  System.out.printf("isPrime(%d)? %b\n",i,isPrime(i)));
+    }
+
+    public static boolean isPrime(int number){
+
+        //think declaratviely and code functionally
+        //given a range 1-8 , then no number within that range divides the given number
+
+//
+   return number>1 && IntStream.range(2,number)
+        .noneMatch(i-> number%i ==0);
+    }
+}
+#+end_src

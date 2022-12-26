@@ -9,11 +9,16 @@
 Functional Style = [[id:65e7d965-e60c-4a18-a61b-80b748f956b5][Declarative Style Programming]] + [[id:6f98b6f9-e556-4e6f-ba91-2bf60283e3f9][Higher Order Functions]]
 #+end_quote
 
-******************* Favour [[id:c1f4d0d6-d39c-48a7-9fd0-c52d65d70cf4][Immutability]]
-******************** Functional Programming code is optimized for [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]].
-******************** If we perform impurity or mutability in code then [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]] goes haywire.
+********************* Favour [[id:c1f4d0d6-d39c-48a7-9fd0-c52d65d70cf4][Immutability]]
+********************** Functional Programming code is optimized for [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]].
+********************** If we perform impurity or mutability in code then [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]] goes haywire.
 #+begin_quote
 Functional Programming -> RELIES ON -> [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]] for Performance -> RELIES ON -> [[id:c1f4d0d6-d39c-48a7-9fd0-c52d65d70cf4][Immutability]] for Correctness
 #+end_quote
-******************* Supports [[id:f35748dd-1361-4362-af98-cd6332a0fc92][Functional Composition]] and [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]]
-******************* It removes [[id:f64be61d-8342-4b40-b23b-4fc28893d98e][Accidental Complexity]]
+********************* Supports [[id:f35748dd-1361-4362-af98-cd6332a0fc92][Functional Composition]] and [[id:b979bf83-6570-4b78-addc-29a29ac9368e][LazyEvaluation]]
+********************* It removes [[id:f64be61d-8342-4b40-b23b-4fc28893d98e][Accidental Complexity]]
+
+#+begin_quote
+TIP:
+While programming THINK declaratively then program functionally
+#+end_quote
