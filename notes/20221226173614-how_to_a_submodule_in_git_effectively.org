@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       e19eaae6-d915-417b-82a0-54f8171b56c4
+:END:
+#+title: How to a submodule in git effectively
+This is how you can remove all submodules in [[id:766353dc-df81-4dab-8b38-f0d9c94baa44][Git]]
+
+To remove a submodule you need to:
+
+Delete the relevant section from the .gitmodules file.
+Stage the .gitmodules changes =git add .gitmodules=
+Delete the relevant section from =.git/config=
+Run =git rm --cached path_to_submodule= (no trailing slash).
+Run =rm -rf .git/modules/path_to_submodule=  (no trailing slash).
+Commit git commit -m "Removed submodule "
+Delete the now untracked submodule files =rm -rf path_to_submodule=
