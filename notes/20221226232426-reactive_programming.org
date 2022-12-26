@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       bc5b5088-9a69-45ea-8d1d-1928b44a08e8
 :END:
-#+title: Reactive Programming     :reactive:programming:
+#+title: Reactive Programming
 [[id:9ae4a51f-369f-476f-820b-f4cdfefd1bb2][Why Reactive Programming]]
 [[id:fd091610-7b19-4e36-a5ad-ffb3eb021195][Observable]]
 
