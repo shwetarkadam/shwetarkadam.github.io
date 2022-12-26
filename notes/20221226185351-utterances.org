@@ -2,6 +2,5 @@
 :ID:       4eaebc03-42f9-46c1-81fe-12c02564a9e1
 :END:
 #+title: Utterances
-
 Utterances is a comment section using github
 https://utteranc.es/
