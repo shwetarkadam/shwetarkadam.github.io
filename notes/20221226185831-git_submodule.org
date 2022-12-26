@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       08487ec4-3d73-45fd-b05e-e8c41b45d316
+:END:
+#+title: Git Submodule
+
+- Git submodule is a way to include another repository in [[id:766353dc-df81-4dab-8b38-f0d9c94baa44][Git]] as a sub directory in one repository.
+- It allows you to keep another repo(your own repo or someone else) in your repo ,track its changes and use it as a reference.
+- TO add a submodule
+  #+begin_src git
+git submodule add https://github.com/username/repo-name.git
+  #+end_src
+Please note the username of the repo.
+
+- Uses
+  - Useful when you want to include external code in your  repository , to track its changes or when you want to use it as reference point for another project.
