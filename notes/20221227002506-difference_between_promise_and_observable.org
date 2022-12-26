@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       54bc8176-c0b2-4d3f-bfaa-77d6c2157d5e
+:END:
+#+title: Difference between Promise and Observable
+- Promise is single transport of data .Deals witrh one async event at a time.
+- Observable is continuous stream of data .Example: Radio where we can tune in and listen to it .

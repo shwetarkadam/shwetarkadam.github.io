@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       9ae4a51f-369f-476f-820b-f4cdfefd1bb2
+:END:
+#+title: Why Reactive Programming
+ Reactive Programming creates an architecture that supports :
+ [[id:61a82660-9273-40b7-909d-af6227960c9d][- Event-Driven]]
+ - Scalable
+- Resilent
+- Responsiveness
+
+Example include :
+- Twitter Feed.
+  Stock Price data on selective data.
