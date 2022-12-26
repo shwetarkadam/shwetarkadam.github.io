@@ -1,5 +1,5 @@
 <!doctype html><html>
-<head><title>LeetCode Patterns – Shweta's Notes</title>
+<head><title>How to a submodule in git effectively – Shweta's Notes</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -25,108 +25,22 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>LeetCode Patterns</h1>
+<h1 class=collapsed-title>How to a submodule in git effectively</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220725173930-leetcode_patterns/ alt="LeetCode Patterns" class=permalink><h1>LeetCode Patterns</h1></a>
-<table>
-<thead>
-<tr>
-<th>If</th>
-<th>USE</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Input array is sorted</td>
-<td>Binary Search</td>
-</tr>
-<tr>
-<td></td>
-<td>2 Pointers</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>all Permutations and subsets are asked</td>
-<td>Backtracking</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>given a Tree/ Graph</td>
-<td>DFS ,BFS</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>given a linked list</td>
-<td>2 Pointers</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>recursion is banned</td>
-<td>Stack</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Must solve in-place</td>
-<td>Swap coressponding values</td>
-</tr>
-<tr>
-<td></td>
-<td>Store One or more diffirent values in same pointer.</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>asked for maximum/minimum subarray/subset/options</td>
-<td>Dynamic Programming</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>asked for top/least K items</td>
-<td>Heap</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>asked for common strings</td>
-<td>Map ,Trie</td>
-</tr>
-<tr>
-<td></td>
-<td>Else</td>
-</tr>
-<tr>
-<td></td>
-<td>Map/Set for o(1) time and o(n) space</td>
-</tr>
-<tr>
-<td></td>
-<td>Sort input for O(nlogn) time o(1) space</td>
-</tr>
-</tbody>
-</table>
-<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20220725173930-leetcode_patterns.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20221226173614-how_to_a_submodule_in_git_effectively/ alt="How to a submodule in git effectively" class=permalink><h1>How to a submodule in git effectively</h1></a>
+<p>This is how you can remove all submodules in <a href=/notes/20220507132936-git/ target=_blank>
+Git
+</a>
+</p>
+<p>To remove a submodule you need to:</p>
+<p>Delete the relevant section from the .gitmodules file.
+Stage the .gitmodules changes <code>git add .gitmodules</code>
+Delete the relevant section from <code>.git/config</code>
+Run <code>git rm --cached path_to_submodule</code> (no trailing slash).
+Run <code>rm -rf .git/modules/path_to_submodule</code> (no trailing slash).
+Commit git commit -m &ldquo;Removed submodule "
+Delete the now untracked submodule files <code>rm -rf path_to_submodule</code></p>
+<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20221226173614-how_to_a_submodule_in_git_effectively.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
