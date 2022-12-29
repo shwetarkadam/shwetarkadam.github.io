@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       0f8e1380-8adb-42c7-8c16-09570e637ec4
+:END:
+#+title: Types of Method References
+
+There are 3 use cases in [[id:f5664f98-1f68-4784-9b00-994e9c6e4280][Method Reference]]
+- Pass as an argument
+- Pass an argument to a static method
+- Pass aargument as a target
+- Two parameters as an argument
+
+  #+begin_src java
+//valueOf is a static method in String class which converts any data type to String
+import java.util.Arrays;
+import java.util.List;
+
+public class Sample {
+    public static void main(String[] args) {
+
+        List<Integer> numbers= Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+            System.out.println("Pass as an argumernt");
+            //here println is refernece to an Instance method
+            numbers.forEach(System.out::println);
+
+
+        System.out.println("Pass as an argumernt to a static method ");
+        numbers.stream()
+                // .map(e->String.valueOf(e))
+                .map(String::valueOf)           //Here valueOf (which is a static method) is a reference to a static method
+                .forEach(System.out::println);
+
+
+
+        System.out.println("Pass as a target");
+        numbers.stream()
+                .map(e-> e.toString())
+                .forEach(System.out::println);
+
+        numbers.stream()
+                .map(e->String.valueOf(e))
+                .map(String::toString)
+                .forEach(System.out::println);
+        }
+
+
+
+        System.out.println("Two parameters as an argument");
+        System.out.println(
+       numbers.stream()
+               .reduce(0,(total,e)-> Integer.sum(total,e)));
+//method references are only useful when the order is the same (total,e) != (e,total) becz other methods might not allow it
+        System.out.println(
+      numbers.stream().reduce(0,Integer::sum));
+}}
+
+  #+end_src

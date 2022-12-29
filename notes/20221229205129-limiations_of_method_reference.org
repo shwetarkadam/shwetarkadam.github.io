@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       70074f84-7549-4f34-ade7-852f96ae247e
+:END:
+#+title: Limiations of Method Reference
+
+[[id:f5664f98-1f68-4784-9b00-994e9c6e4280][Method Reference]] has 2 limiations
+
+- Cannot use them for data manipulation
+- Cannot use them if there is a conflict between static method and instance method

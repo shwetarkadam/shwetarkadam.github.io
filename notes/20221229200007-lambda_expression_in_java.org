@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       ad170007-f588-453d-84c2-86f8d0e670fe
+:END:
+#+title: Lambda Expression In Java
+A function has 4 things:-
+Name
+Return type
+Parameter list.  --needed to given by developer
+Body            --needed to be given by developer in lambda expression
+
+#+begin_quote
+A lambda expression has parameter list and body
+#+end_quote
+
+Example:
+#+begin_src java
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Consumer;
+public class Sample {
+    public static void main(String[] args) {
+
+        List<Integer> numbers= Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        //Internal Iterators
+        numbers.forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(final Integer integer) {
+                System.out.println(integer);
+            }
+        });
+        System.out.println("------");
+        //In lambda expression we remove the ceremony code
+        numbers.forEach((Integer value)-> System.out.println(value));
+        System.out.println("------");
+       // We can reduce the noise further
+        numbers.forEach(value->System.out.println(value));
+    }
+}
+#+end_src
+
+
+- Java 8 has [[id:b21859e2-f2bd-4fc8-90db-debe99a66e05][Type Inference]] but ONLY for Lambda Expression

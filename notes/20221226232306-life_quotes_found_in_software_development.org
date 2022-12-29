@@ -2,6 +2,7 @@
 :ID:       1df45c37-e28e-40c9-9aec-5e44bd930809
 :END:
 #+title: Life Quotes found in Software Development
-- #+begin_quote
+
+  #+begin_quote
 Efficiency is achieved not by doing things faster but eliminating the things we should not be doing in the first place
 #+end_quote

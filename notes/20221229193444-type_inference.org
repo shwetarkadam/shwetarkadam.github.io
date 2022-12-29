@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       b21859e2-f2bd-4fc8-90db-debe99a66e05
+:END:
+#+title: Type Inference
+
+Type inference refers to automatic detection of the type (int ,string) in a code expression.
+The compiler is intelligent enough to know the data tpe
+
+Exapmle:
+#+begin_src java
+@FunctionalInterface
+public interface MyComparator{
+    public  boolean compare(int n1,int n2);
+}
+#+end_src
+#+begin_src java
+class Main {
+    public static void main(String[] args) {
+     //defined the above interface compare method here using lambda expression.
+     //here we dont provide the type "int" since compiler is able to infer that it is int data type.Compiler is intelligent enough to know that
+        MyComparator obj=(n1,n2)->n1>n2;
+
+        boolean compare=obj.compare(40,30);
+    }
+}
+#+end_src
+#+begin_src
+OUTPUT:
+true
+#+end_src
+The property (int) is inferred by compiler itself

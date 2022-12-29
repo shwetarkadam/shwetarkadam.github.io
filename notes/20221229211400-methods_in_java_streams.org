@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       b88f7007-8ee0-4d46-8d27-1623a70b16fc
+:END:
+#+title: Methods in Java Streams

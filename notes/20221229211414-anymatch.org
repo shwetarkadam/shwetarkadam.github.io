@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       c589c04c-1017-44b3-b574-c3eb4d3d065f
+:END:
+#+title: anyMatch
+- returns boolean
+
+#+begin_src java
+f=map.entrySet().stream().anyMatch(e->e.getValue()>1);
+//this expression checks if any value inside the hashmap is greater than 1
+#+end_src

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       f5664f98-1f68-4784-9b00-994e9c6e4280
+:END:
+#+title: Method Reference
+
+- Method reference is a shorthand syntax for a [[id:ad170007-f588-453d-84c2-86f8d0e670fe][Lambda Expression In Java]] that contains just 1 method call. We are passing a function and not invoking a fucntion hence ::
+
+  #+begin_src java
+Object::method name
+  #+end_src
+
+- When to use ?
+  Receiving an argument or parameter and you want NOT ALTER IT in anyway but let it PASS through.Use it as gluecode .
+
+- When NOT to use?
+  If we want to perform operations on it then NOT usefule
+
+#+begin_src java
+public class Sample {
+    public static void main(String[] args) {
+
+        List<Integer> numbers= Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+          System.out.println("Method refernce ");
+        // We are passing a function and not invoking a fucntion hence ::
+        //Method Reference
+        numbers.forEach(System.out::println);
+        }}
+
+#+end_src
+
+- [[id:0f8e1380-8adb-42c7-8c16-09570e637ec4][Types of Method References]]
+
+- [[id:70074f84-7549-4f34-ade7-852f96ae247e][Limiations of Method Reference]]

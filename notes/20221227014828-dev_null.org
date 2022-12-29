@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       0e96ab2b-78e7-4140-a1b8-9eed64e9448d
+:END:
+#+title: < /dev/null
+=< /dev/null= is for adding EOL to the STDIN otherwise it hangs on the Terminal.
+#+begin_src bash
+find / -name "*jdk*" 2> /dev/null
+#+end_src
