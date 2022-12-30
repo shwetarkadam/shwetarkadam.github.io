@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d41017e3-5a55-413a-8955-7a9ebc4c6357
+:END:
+#+title: AngularJS
+Angular JS is a framework used in [[id:1365b428-b3a0-4e45-b0fd-00a1f2cdecd9][Web Development]] to make it easier to make applications in web.
+Angular JS is the first version released by the developer. All other version after are called Angular
+Features :
+- Component Based ,Modularized code
+- Uses [[id:98a03b2b-8170-405f-9b7d-193b69e6cc6a][Dependency Injection]]
+- [[id:d374a48d-8e97-4bb6-b8b5-991791b34a25][Typescript]] for development
+- RxJS -Javascript implemenation for [[id:bc5b5088-9a69-45ea-8d1d-1928b44a08e8][Reactive Programming]] applications

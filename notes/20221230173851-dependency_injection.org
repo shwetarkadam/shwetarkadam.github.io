@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       98a03b2b-8170-405f-9b7d-193b69e6cc6a
+:END:
+#+title: Dependency Injection
+ Dependency Injection is a software design pattern where a class or a component receives its dependencies from an external source instead of creating them directly or depending on some global state variable
+
+ Example: In Java instead of creating Java objects using =new= keyword we can use =@Autowired= annotation for creating objects via dependency injection
