@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       1b4fb4f8-24fb-4040-8ba6-a0c964a02b00
+:END:
+#+title: Collectors in Java
+ - Belongs to =java.util.Stream.Collectors=
+ - Helps in Accumulating or copying the data from =Stream= Object to =Collection= Object . (Collections framework as in List ,Set)
+ - Summarizing or performing operatiosn based on some criteria.
+   #+begin_src java
+List<Integer> l=new ArrayList();
+l.add(10);
+l.add(20);
+l.add(30);
+l.add(40);
+
+    List l2=l.stream().map(i->i*i).collect(Collectors.toList());
+
+
+   #+end_src
+ - Used along with [[id:9e8ea8dc-cf91-4c7f-8aff-1c1c2f600c91][Java Streams]]
