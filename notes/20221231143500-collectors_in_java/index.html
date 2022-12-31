@@ -1,9 +1,10 @@
 <!doctype html><html>
-<head><title>Sharding – Shweta's Notes</title>
+<head><title>Collectors in Java – Shweta's Notes</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
+<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -25,16 +26,29 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Sharding</h1>
+<h1 class=collapsed-title>Collectors in Java</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20220613202322-sharding/ alt=Sharding class=permalink><h1>Sharding</h1></a>
+<a href=https://notes.codeklutz.com/notes/20221231143500-collectors_in_java/ alt="Collectors in Java" class=permalink><h1>Collectors in Java</h1></a>
 <ul>
-<li>Horizontal scaling in db context is known as sharding.</li>
-<li>The practice of adding more servers.</li>
-<li>Sharding seperates large databases into more smaller ,easily managed parts called shards.</li>
-<li>Each shard shares the same schema,though the actual data on each shard is unique to the shard.</li>
+<li>Belongs to <code>java.util.Stream.Collectors</code></li>
+<li>Helps in Accumulating or copying the data from <code>Stream</code> Object to <code>Collection</code> Object . (Collections framework as in List ,Set)</li>
+<li>Summarizing or performing operatiosn based on some criteria.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java>List<span style=color:#ff79c6>&lt;</span>Integer<span style=color:#ff79c6>&gt;</span> l<span style=color:#ff79c6>=</span><span style=color:#ff79c6>new</span> ArrayList<span style=color:#ff79c6>();</span>
+l<span style=color:#ff79c6>.</span><span style=color:#50fa7b>add</span><span style=color:#ff79c6>(</span>10<span style=color:#ff79c6>);</span>
+l<span style=color:#ff79c6>.</span><span style=color:#50fa7b>add</span><span style=color:#ff79c6>(</span>20<span style=color:#ff79c6>);</span>
+l<span style=color:#ff79c6>.</span><span style=color:#50fa7b>add</span><span style=color:#ff79c6>(</span>30<span style=color:#ff79c6>);</span>
+l<span style=color:#ff79c6>.</span><span style=color:#50fa7b>add</span><span style=color:#ff79c6>(</span>40<span style=color:#ff79c6>);</span>
+
+    List l2<span style=color:#ff79c6>=</span>l<span style=color:#ff79c6>.</span><span style=color:#50fa7b>stream</span><span style=color:#ff79c6>().</span><span style=color:#50fa7b>map</span><span style=color:#ff79c6>(</span>i<span style=color:#ff79c6>-&gt;</span>i<span style=color:#ff79c6>*</span>i<span style=color:#ff79c6>).</span><span style=color:#50fa7b>collect</span><span style=color:#ff79c6>(</span>Collectors<span style=color:#ff79c6>.</span><span style=color:#50fa7b>toList</span><span style=color:#ff79c6>());</span>
+
+
+</code></pre></div></li>
+<li>Used along with <a href=/notes/20220507133804-javastreams/ target=_blank>
+Java Streams
+</a>
+</li>
 </ul>
-<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20220613202322-sharding.org>Edit this page on GitHub</a></small>
+<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20221231143500-collectors_in_java.org>Edit this page on GitHub</a></small>
 </div>
 </div>
 </div>
