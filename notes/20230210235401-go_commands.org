@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       ef4c642c-2abe-42a1-9074-8963851832ae
+:END:
+#+title: #+title: go commands
+
+[[id:43eaca86-098d-4f58-957b-121b6a268261][go]]
+#+begin_src go
+go mod init <module path>
+#+end_src
+- Initalized a go.mod file
+- Describes the module and go version of used in the program
+  go.mod file
+  #+begin_src go
+module booking-app
+
+go 1.20
+
+  #+end_src
+
+- the module path is also the import path
+- All code belongs to a package.

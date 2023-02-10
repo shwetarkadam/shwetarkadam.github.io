@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       43eaca86-098d-4f58-957b-121b6a268261
+:END:
+#+title: go
+
+
+- go is a programming language in [[id:895a09e8-febf-4aeb-aa05-6520f2b17c95][Software Engineering]]
+- It is language .
+- The source code is compiled down to machine code.
+- Known for its extremely fast compile due to dependency analysis
