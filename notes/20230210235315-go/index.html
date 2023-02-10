@@ -1,10 +1,9 @@
 <!doctype html><html>
-<head><title>Cookie Based Authentication – Shweta's Notes</title>
+<head><title>go – Shweta's Notes</title>
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name=apple-mobile-web-app-capable content="yes">
-<link rel=preload href=/fonts/iosevka-regular.woff2 as=font type=font/woff2 crossorigin>
 <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
 <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
@@ -26,28 +25,25 @@
 </header>
 <div class=grid>
 <div class=page data-level=1>
-<h1 class=collapsed-title>Cookie Based Authentication</h1>
+<h1 class=collapsed-title>go</h1>
 <div class=content>
-<a href=https://notes.codeklutz.com/notes/20221115174045-cookiebasedauthentication/ alt="Cookie Based Authentication" class=permalink><h1>Cookie Based Authentication</h1></a>
-<p>Also called Session Based Authentication.</p>
-<p>Http Protocol is stateless so every time a user logins with username and password , the server doesnt keep track of the login credentials .
-So Next time the same user logins , the server has to authenticate the user again. With private data or apis ,this repeated process gets annoying hence we can use Cookie/Session based authentication where we basically make the HTTP protocol stateful.</p>
-<p>THis makes HTTP stateful since client and server both have some sort of session or record of that particular user. Its the server&rsquo;s responsibility to ensure the number of activer user sessions in some database or memory. THe client sends the cookie everytime it makes a request to the server.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#50fa7b>Client -&gt; Sends Username Password -&gt; Server</span>
-<span style=color:#50fa7b>Client &lt;- Server authenticates the credentials and returns a token (Set-cookie header) + Server also stores this token in its database or memory</span>
-<span style=color:#50fa7b>Client stores the token  -&gt; and sends the token to server each time while making a request</span>
-<span style=color:#50fa7b>Client &lt;- Server authenticates that token and returns the requested data to client</span>
-
-</code></pre></div><h2 id=cons>Cons:</h2>
-<h3 id=increased-overhead-as-users-increase-so-will-the-number-of-tokens-on-server-side-and-hence-server-overhead-increases-dot>Increased Overhead : As users increase , so will the number of tokens on server side and hence server overhead increases.</h3>
-<h3 id=scalability-overhead-as-your-server-instances-will-increase-you-will-need-to-store-the-session-cookies-in-all-instances-of-servers-which-will-cause-scalabilirt-issues-dot-but-this-can-be-mananged-by-having-a-dedicated-server-only-mananging-session-data-or-loadbalancer-could-support-sticky-sessions>Scalability Overhead: As your server instances will increase , you will need to store the session/cookies in all instances of servers which will cause scalabilirt issues . But this can be mananged by having a dedicated server only mananging session data or loadbalancer could support sticky sessions</h3>
-<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20221115174045-cookiebasedauthentication.org>Edit this page on GitHub</a></small>
+<a href=https://notes.codeklutz.com/notes/20230210235315-go/ alt=go class=permalink><h1>go</h1></a>
+<ul>
+<li>go is a programming language in <a href=/notes/20221220193956-software_engineering/ target=_blank>
+Software Engineering
+</a>
+</li>
+<li>It is language .</li>
+<li>The source code is compiled down to machine code.</li>
+<li>Known for its extremely fast compile due to dependency analysis</li>
+</ul>
+<small><a href=https://github.com/shwetarkadam/shwetarkadam.github.io/edit/master/notes/20230210235315-go.org>Edit this page on GitHub</a></small>
 </div>
 <div class=bl-section>
 <h4>Links to this note</h4>
 <div class=backlinks>
 <ul>
-<li><a href=/notes/20221115173358-authentication/>Authentication</a></li>
+<li><a href=/notes/20230210235401-go_commands/>#+title: go commands</a></li>
 </ul>
 </div>
 </div>
