@@ -17,7 +17,7 @@ some calculations involving j
 
   else if(cond. ==k)
   {
-  ans=calcul;ations
+  ans=calculations
    j++;
   }
   else if( condition >k ){
