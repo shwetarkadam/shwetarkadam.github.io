@@ -1,24 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Shweta&#39;s Braindump</title>
-    <link>https://notes.codeklutz.com/</link>
-    <description>Recent content on Shweta&#39;s Braindump</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://notes.codeklutz.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Shweta&#39;s Braindump</title>
-      <link>https://notes.codeklutz.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://notes.codeklutz.com/about/</guid>
-      <description>Hi! I&amp;rsquo;m Shweta   , and you&amp;rsquo;ve stumbled upon my braindump. This website contains my working notes accumulated over some weeks. I shall add which I find insightful or useful. So stay tuned
-You can start hopping around by going to the full index  . Have fun!</description>
-    </item>
-    
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+    <title>Shweta&#39;s Notes</title>
+  
+  <link href="http://localhost:1313/index.xml" rel="self"/>
+  <link href="http://localhost:1313/"/>
+  <id>http://localhost:1313/</id>
+  <generator>Hugo -- gohugo.io</generator>
+  <entry>
+    <title type="html"><![CDATA[Notes]]></title>
+    <link href="http://localhost:1313/notes/"/>
+    <id>http://localhost:1313/notes/</id>
+    <published>0001-01-01T00:00:00+00:00</published>
+    <updated>0001-01-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+  </entry>
+</feed>

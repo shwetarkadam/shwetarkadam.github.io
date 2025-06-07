@@ -1,0 +1,166 @@
+<title>{{ .Title }} – {{ .Site.Title }}</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+{{ if (findRE "<pre" .Content 1) }}
+<link rel="preload" href="/fonts/iosevka-regular.woff2" as="font" type="font/woff2" crossorigin>
+{{ end }}
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+
+{{ $main := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $main.Permalink }}"/>
+
+<!-- Theme toggle initialization -->
+<script>
+// Initialize theme as soon as possible to prevent flash
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
+<!-- Theme toggle styles -->
+<style>
+/* Light theme variables */
+:root[data-theme="light"] {
+    --primary: #1f77d4;
+    --fg: #2e2a31;
+    --bg: #ffffff;
+    --header-bg: #f8f9fa;
+    --page-bg: #ffffff;
+    --grid-bg: #ffffff;
+    --code-bg: #f5f5f5;
+    --border-color: #e1e4e8;
+    --link-color: var(--primary);
+    --backlink-color: var(--primary);
+    --active-link-background-color: #f0f0f0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme variables - using theme's original dark colors */
+:root[data-theme="dark"] {
+    --primary: #1f77d4;
+    --fg: #eee;
+    --bg: #1c2128;
+    --header-bg: #262728;
+    --page-bg: #262728;
+    --grid-bg: #1a1b1c;
+    --code-bg: #2e2a31;
+    --border-color: #333;
+    --link-color: var(--primary);
+    --backlink-color: var(--primary);
+    --active-link-background-color: #444;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Base styles */
+body {
+    background-color: var(--bg) !important;
+    color: var(--fg) !important;
+}
+
+.content {
+    background-color: var(--page-bg) !important;
+}
+
+header {
+    background-color: var(--header-bg) !important;
+}
+
+a {
+    color: var(--link-color) !important;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+#theme-toggle {
+    background: none;
+    border: 1px solid var(--fg);
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--fg);
+    background-color: var(--bg);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+#theme-toggle:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: var(--active-link-background-color);
+}
+
+#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    stroke: var(--fg);
+}
+
+#theme-toggle .sun-icon {
+    display: none;
+}
+
+#theme-toggle .moon-icon {
+    display: block;
+}
+
+:root[data-theme="dark"] #theme-toggle .sun-icon {
+    display: block;
+}
+
+:root[data-theme="dark"] #theme-toggle .moon-icon {
+    display: none;
+}
+
+/* Additional theme-specific overrides */
+:root[data-theme="light"] .content,
+:root[data-theme="light"] main,
+:root[data-theme="light"] body {
+    background-color: var(--bg) !important;
+}
+
+:root[data-theme="dark"] .content,
+:root[data-theme="dark"] main,
+:root[data-theme="dark"] body {
+    background-color: var(--bg) !important;
+}
+
+/* Code blocks */
+code {
+    background-color: var(--code-bg) !important;
+}
+
+/* Links */
+a:hover {
+    color: var(--primary) !important;
+    background-color: var(--active-link-background-color) !important;
+}
+
+/* Borders */
+* {
+    border-color: var(--border-color) !important;
+}
+</style> 

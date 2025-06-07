@@ -5,3 +5,50 @@
 @import "_chroma-themes";
 @import "_search";
 @import "_all-the-rest";
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #2e2a31;
+  --link-color: #775dff;
+  --hover-color: #aa17e6;
+}
+
+[data-theme="dark"] {
+  --bg-color: #2e2a31;
+  --text-color: #bcbabe;
+  --link-color: #796af5;
+  --hover-color: #bb60ea;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.theme-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--text-color);
+}
+
+#moon-icon {
+  display: none;
+}
+
+[data-theme="dark"] #sun-icon {
+  display: none;
+}
+
+[data-theme="dark"] #moon-icon {
+  display: block;
+}

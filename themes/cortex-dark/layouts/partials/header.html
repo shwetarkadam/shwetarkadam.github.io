@@ -2,9 +2,24 @@
   {{ $logo := resources.Get "img/logo.png" }}
   {{ $logo2x := resources.Get "img/logo@2x.png" }}
   {{ $logo3x := resources.Get "img/logo@3x.png" }}
-  <a href= "{{ $.Site.Params.entrypoint }}" id="logo">
-    <img src="{{ $logo.Permalink }}?v=3" srcset="{{ $logo2x.Permalink }} 2x, {{ $logo3x.Permalink }} 3x" alt="Arne Bahlo">
-    <h3 class="site-title">{{.Site.Title}}</h3>
+  <a href="/about" id="logo">
+    <img src="/img/logo.png?v=3" srcset="/img/logo@2x.png 2x, /img/logo@3x.png 3x" alt="Shweta's Notes">
+    <h3 class="site-title">Shweta's Notes</h3>
   </a>
-  {{- partial "search-form.html" . -}}
+  
+  <button id="theme-toggle" aria-label="Toggle theme">
+    <svg id="sun-icon" class="theme-icon" viewBox="0 0 24 24">
+      <path d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3z"/>
+      <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+    </svg>
+    <svg id="moon-icon" class="theme-icon" viewBox="0 0 24 24">
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+    </svg>
+  </button>
+  
+  <form id="search" autocomplete="off" action='/search/' method="get">
+    <label hidden for="search-input">Search site</label>
+    <input type="text" id="search-input" name="query" placeholder="Type here to search">
+    <input type="submit" value="search">
+  </form>
 </header>
