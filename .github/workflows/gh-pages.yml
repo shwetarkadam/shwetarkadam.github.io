@@ -17,23 +17,29 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Install org-roam dependencies
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y sqlite3
+          sudo apt-get install -y sqlite3 make
+
       - name: Install emacs
         uses: purcell/setup-emacs@master
         with:
           version: '28.2'
-
-      - name: Convert org files to hugo
-        run: make org2hugo
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
+
+      - name: Convert org files to hugo
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Contents of directory:"
+          ls -la
+          echo "Converting org files..."
+          make org2hugo || (cat conversion.log && exit 1)
 
       - name: Build
         run: hugo --minify
